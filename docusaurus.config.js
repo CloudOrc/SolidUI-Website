@@ -21,8 +21,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Apache StreamPark (incubating)',
-  tagline: 'Apache StreamPark - Make stream processing easier! easy-to-use streaming application development framework and operation platform',
+  title: 'SolidUI',
+  tagline: 'AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.',
   url: 'https://website.solidui.top/',
   baseUrl: '/',
 
@@ -79,14 +79,14 @@ const config = {
           editLocalizedFiles: true,
           sidebarCollapsed: false,
           // Please change this to your repo.
-          editUrl: 'https://github.com/apache/incubator-streampark-website/edit/dev/'
+          editUrl: 'https://github.com/CloudOrc/SolidUI-Website/edit/dev'
         },
 
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/apache/incubator-streampark-website/edit/dev/',
+            'https://github.com/CloudOrc/SolidUI-Website/edit/dev',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -101,9 +101,9 @@ const config = {
       disableSwitch: true
     },
     navbar: {
-      title: 'Apache StreamPark',
+      title: 'SolidUI',
       logo: {
-        alt: 'StreamPark Logo',
+        alt: 'SolidUI Logo',
         src: 'image/logo.png',
       },
       items: [
@@ -114,10 +114,14 @@ const config = {
           activeBaseRegex: `/docs`,
         },
         {
-          to: '/download',
           position: 'left',
           label: 'Download',
-          activeBaseRegex: '/download',
+          items: [
+            {
+              label: "Releases",
+              to: "https://github.com/CloudOrc/SolidUI/releases",
+            }
+            ],
         },
         {
           label: 'Community',
@@ -128,25 +132,10 @@ const config = {
               to: "https://www.apache.org/foundation/policies/conduct",
             },
             {
-              label: "Join the mailing lists",
-              to: "/community/contribution_guide/mailing_lists",
-            },
-            {
               label: "Become A Committer",
               to: "/community/contribution_guide/become_committer",
             },
-            {
-              label: "Become A PMC member",
-              to: "/community/contribution_guide/become_pmc_member",
-            },
-            {
-              label: "New Committer Process",
-              to: "/community/contribution_guide/new_committer_process",
-            },
-            {
-              label: "New PMC Member Process",
-              to: "/community/contribution_guide/new_pmc_ember_process",
-            },
+
             {
               label: "Documentation Notice",
               to: "/community/submit_guide/document",
@@ -154,10 +143,6 @@ const config = {
             {
               label: "Submit Code",
               to: "/community/submit_guide/submit_code",
-            },
-            {
-              label: "How to release",
-              to: "/community/release/how_to_release",
             },
           ],
         },
@@ -168,21 +153,20 @@ const config = {
           activeBaseRegex: `/team`,
         },
         {
-          to: '/user',
           label: 'Users',
           position: 'left',
-          activeBaseRegex: `/user`,
+          items: [
+            {
+              label: "Our Users",
+              to: "https://github.com/CloudOrc/SolidUI/issues/1",
+            }
+          ],
         },
         {
           to: '/blog',
           label: 'Blog',
           position: 'left',
           activeBaseRegex: `/blog`,
-        },
-        {
-          to: 'https://github.com/apache/incubator-streampark/issues/507',
-          position: 'left',
-          label: 'FAQ'
         },
         {
           label: 'ASF',
@@ -219,7 +203,7 @@ const config = {
           ],
         },
         {
-          href: 'https://github.com/apache/incubator-streampark',
+          href: 'https://github.com/CloudOrc/SolidUI',
           label: 'GitHub',
           position: 'left',
         },
@@ -239,9 +223,9 @@ const config = {
               html: `
                   <div class="footer-left-box">
                     <div class="flex align-center footer-system">
-                      <span class='system-title'>About StreamPark</span>
+                      <span class='system-title'>About SolidUI</span>
                     </div>
-                    <p>Make stream processing easier! easy-to-use streaming application development framework and operation platform</p>
+                    <p>AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.</p>
                   </div>
                 `,
             }
@@ -256,11 +240,7 @@ const config = {
             },
             {
               label: 'Releases',
-              href: 'https://github.com/apache/incubator-streampark/releases',
-            },
-            {
-              label: 'FAQ',
-              href: 'https://github.com/apache/incubator-streampark/issues/507',
+              href: 'https://github.com/CloudOrc/SolidUI/releases',
             }
           ],
         },
@@ -269,15 +249,15 @@ const config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/apache/incubator-streampark',
+              href: 'https://github.com/CloudOrc/SolidUI',
             },
             {
               label: 'Issue Tracker',
-              href: 'https://github.com/apache/incubator-streampark/issues',
+              href: 'https://github.com/CloudOrc/SolidUI/issues',
             },
             {
               label: 'Pull Requests',
-              href: 'https://github.com/apache/incubator-streampark/pulls',
+              href: 'https://github.com/CloudOrc/SolidUI/pulls',
             },
           ],
         },
@@ -287,16 +267,16 @@ const config = {
             {
               html: `
                 <div class="subscribe-box">
-                    <div class="d-flex align-items-center" style="margin-bottom: 30px;padding-top: 11px">
-                      <div class="subscribe-input flex-fill">
-                        <input class="form-control" id="email_address" maxLength="60" type="text" name="email_address" placeholder="Subscribe with us">
-                      </div>
-                      <div class="subscribe-submit-inner">
-                        <a class="btn btn-white m-0" type="submit" href="mailto:dev-subscribe@streampark.apache.org">
-                          <span><i class="fa fa-paper-plane text-white"></i></span>
-                        </a>
-                      </div>
-                    </div>
+<!--                    <div class="d-flex align-items-center" style="margin-bottom: 30px;padding-top: 11px">-->
+<!--                      <div class="subscribe-input flex-fill">-->
+<!--                        <input class="form-control" id="email_address" maxLength="60" type="text" name="email_address" placeholder="Subscribe with us">-->
+<!--                      </div>-->
+<!--                      <div class="subscribe-submit-inner">-->
+<!--                        <a class="btn btn-white m-0" type="submit" href="mailto:dev-subscribe@streampark.apache.org">-->
+<!--                          <span><i class="fa fa-paper-plane text-white"></i></span>-->
+<!--                        </a>-->
+<!--                      </div>-->
+<!--                    </div>-->
                     <ul class="icon-bottom">
                         <li>
                           <a href="javascript:void(0)">
@@ -317,21 +297,17 @@ const config = {
       copyright: `
             <div  style="text-align: left;margin-top:30px">
                 <div class="d-flex align-items-center">
-                    <div>
-                      <a href="https://incubator.apache.org/" class="footerLogoLink" one-link-mark="yes">
-                        <img src="/image/apache-incubator.svg" alt="Apache Incubator logo" class="footer__logo">
-                      </a>
-                    </div>
+                    
                     <div>
                       <p style="font-family: Avenir-Medium;font-size: 14px;color: #999;line-height: 25px;">
-                      Apache StreamPark is an effort undergoing incubation at The Apache Software Foundation (ASF), sponsored by the Apache Incubator. Incubation is required of all newly accepted projects until a further review indicates that the infrastructure, communications, and decision making process have stabilized in a manner consistent with other successful ASF projects. While incubation status is not necessarily a reflection of the completeness or stability of the code, it does indicate that the project has yet to be fully endorsed by the ASF.
+                      AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.
                       </p>
                   </div>
                 </div>
 
                 <div style="border-top: 1px solid #525252;min-height: 60px;line-height: 25px;text-align: left;font-family: Avenir-Medium;font-size: 14px;color: #999;display: flex;align-items: center;">
                   <span>
-                      Copyright © 2022-${new Date().getFullYear()} The Apache Software Foundation. Apache StreamPark, StreamPark, and its feather logo are trademarks of The Apache Software Foundation.
+                      Copyright © 2022-${new Date().getFullYear()} The Apache Software Foundation. SolidUI.
                   </span>
                 </div>
             </div>`,

@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ## 2. Image building
 
-### 2.1 Building server-side image
+### 2.1 Building server-side image build-entrance-server
 
 ```shell script
 tar -zxvf solidui-x.x.x-bin.tar.gz
@@ -24,7 +24,19 @@ docker build  -f ./docker/Dockerfile  -t  solidui-entrance:x.x.x .
 
 ```
 
-### 2.2 Building front-end image
+
+### 2.2 Server-side image build-soliduimodelui (after version 0.2.0)
+```shell script
+tar -zxvf solidui-x.x.x-bin.tar.gz
+cd solidui-x.x.x-bin
+# update .env
+vi soliduimodelui/.env
+SNAKEMQ_LISTENER=0.0.0.0
+SNAKEMQ_CONNECTOR=soliduimodelui
+docker build  -f ./soliduimodelui/docker/Dockerfile  -t  soliduimodelui:x.x.x .
+```
+
+### 2.3 Building front-end image
 
 ```shell script
 

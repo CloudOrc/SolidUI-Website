@@ -1,15 +1,15 @@
-# StreamPark Website
+# SolidUI Website
 
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 [English](README.md) | [中文](README_ZH.md)
 
-这是包含 `http://streampark.apache.org` 的所有源代码的存储库。
-本指南将指导您如何为 Apache StreamPark(Incubating) 的网站做出贡献。
+这是包含 `https://website.solidui.top/` 的所有源代码的存储库。
+本指南将指导您如何为 SolidUI 的网站做出贡献。
 
 ## 分支
 
-dev 为默认主分支，修改请先 fork 到自己的仓库，然后在 main 分支上进行开发修改。
+dev 为开发分支，修改请先 fork 到自己的仓库。
 
 ```
 dev  默认分支
@@ -20,7 +20,7 @@ dev  默认分支
 本网站是使用 Node.js 编译的，使用的是 [Docusaurus](https://docusaurus.io/) 框架组件：
 
 1. 下载并安装 Node.js（version>12.5.0）
-2. 克隆代码到本地 `git clone git@github.com:apache/incubator-streampark-website.git`
+2. 克隆代码到本地 ``
 2. 运行 `npm install` 来安装所需的依赖库。
 3. 在根目录运行`npm run start`，可以访问 http://localhost:3000 查看站点英文模式预览
 4. 在根目录运行`npm run start-zh`，可以访问 http://localhost:3000 查看站点的中文模式预览
@@ -94,7 +94,7 @@ dev  默认分支
 
 ### 3.5 首页页面修改
 
-访问页面：[http://streampark.apache.org/](http://streampark.apache.org/)
+访问页面：[https://website.solidui.top/](https://website.solidui.top/)
 
 位于 `src/pages/home`：
 
@@ -106,7 +106,7 @@ dev  默认分支
 
 ### 3.6 团队页面修改
 
-访问页面：[http://streampark.apache.org/zh-CN/team](http://streampark.apache.org/zh-CN/team)
+访问页面：[https://website.solidui.top/zh-CN/team](https://website.solidui.top/zh-CN/team)
 
 位于 `src/pages/team`：
 
@@ -119,7 +119,7 @@ dev  默认分支
 
 ### 3.7  用户列表页面修改
 
-访问页面：[http://streampark.apache.org/zh-CN/user/](http://streampark.apache.org/zh-CN/user/)
+访问页面：[https://website.solidui.top/zh-CN/user/](https://website.solidui.top/zh-CN/user/)
 
 位于 `src/pages/user`：
 

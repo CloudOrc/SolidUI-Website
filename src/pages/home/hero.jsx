@@ -74,19 +74,15 @@ export default function () {
             <div className="text-start mt-0">
               <div className="mb-5 system_info pt-0">
                 <div className="project_title fw-bold text-white mb-3">
-                  <div className="animated-gradient-text_background animated-gradient-text_background-1" style={{ '--content': '"Apache"', '--start-color': '#00DFD8', '--end-color': '#FFF' }}>
-                    <span className="animated-gradient-text_foreground animated-gradient-text_foreground-1">Apache</span>
-                  </div>
                   <div className="d-flex  align-items-start">
-                    <div className="animated-gradient-text_background animated-gradient-text_background-2" style={{ '--content': '"StreamPark"', '--start-color': '#FFF', '--end-color': '#00DFD8' }}>
-                      <span className="animated-gradient-text_foreground animated-gradient-text_foreground-2">StreamPark</span>
+                    <div className="animated-gradient-text_background animated-gradient-text_background-2" style={{ '--content': '"SolidUI"', '--start-color': '#FFF', '--end-color': '#00DFD8' }}>
+                      <span className="animated-gradient-text_foreground animated-gradient-text_foreground-2">SolidUI</span>
                     </div>
-                    <span className="badge bg-secondary-home fs-6 tag">Incubating</span>
                   </div>
                 </div>
                 <p className="lead text-light">{dataSource.slogan.description}</p>
               </div>
-              <a className="btn streampark-btn btn mt-30 ztop" href="https://github.com/apache/incubator-streampark"
+              <a className="btn streampark-btn btn mt-30 ztop" href="https://github.com/CloudOrc/SolidUI"
                 target="_blank">
                 <i className="lni-github-original"></i>&nbsp;GitHub
               </a>
@@ -98,9 +94,9 @@ export default function () {
                 <a href="https://www.apache.org/licenses/LICENSE-2.0.html">
                   <img src="https://img.shields.io/badge/license-Apache%202-4EB1BA.svg" className="wow fadeInUp"></img>
                 </a>
-                <img src="https://img.shields.io/github/stars/apache/incubator-streampark.svg?sanitize=true" className="wow fadeInUp"></img>
-                <img src="https://img.shields.io/github/forks/apache/incubator-streampark.svg?sanitize=true" className="wow fadeInUp"></img>
-                <img src="https://img.shields.io/github/languages/count/apache/incubator-streampark" className="wow fadeInUp"></img>
+                <img src="https://img.shields.io/github/stars/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
+                <img src="https://img.shields.io/github/forks/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
+                <img src="https://img.shields.io/github/languages/count/CloudOrc/SolidUI" className="wow fadeInUp"></img>
               </div>
             </div>
           </div>

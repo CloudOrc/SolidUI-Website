@@ -1,76 +1,98 @@
 ---
 id: 'intro'
-title: 'What is StreamPark'
+title: 'What is SolidUI'
 sidebar_position: 1
 ---
 
-# StreamPark
-make stream processing easier!!!
 
-> An amazing framework makes stream processing easier.
+# Introduce
 
-## 🚀 What is StreamPark
+AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.
 
-`StreamPark` is an easy-to-use stream processing application development framework and one-stop stream processing operation platform, Aimed at ease building and managing streaming applications, StreamPark provides scaffolding for writing streaming process logics with Apache Flink and Apache Spark.
-StreamPark also provides a professional task management including task development, scheduling, interactive query, deployment, operation, maintenance, etc.
+## Core Features
 
-<video src="http://assets.streamxhub.com/streamx-video.mp4" controls="controls" width="100%" height="100%"></video>
+* Minimalist process, concise design
+* Various 2D legends
+* Various 3D legends
+* Various 3D scenes
+* Support multiple data sources
+* Support Huggingface space
+* Support plug-in robot
+* Support SolidUI-Model
+* Support Large Language Model
+* Containerized deployment
 
-## Why StreamPark
+# QuickStart
 
-Apache Flink and Apache Spark are widely used as the next generation of big data streaming computing engines.  Based on a bench of excellent experiences combined with best practices, we extracted the task deployment and runtime parameters into the configuration files. In this way,  an easy-to-use RuntimeContext with out-of-the-box connectors would bring easier and more efficient task development experience. It reduces the learning cost and development barriers, hence developers can focus on the business logic.
-On the other hand, It can be challenge for enterprises to use Flink & Spark if there is no professional management platform for Flink & Spark tasks during the deployment phase. StreamPark provides such a professional task management platform, including task development, scheduling, interactive query, deployment, operation, maintenance, etc.
+For quick experience
 
-## 🎉 Features
-* Apache Flink & Spark application development scaffolding
-* Supports multiple versions of Flink & Spark
-* A range of out-of-the-box connectors
-* one-stop stream processing operation platform
-* Support catalog、olap、streaming-warehouse etc.
-* ...
+Want to start with [Standalone](docs/deployment/overall/deployment-standalone.md)
 
+Want to start with [Docker](docs/deployment/overall/deployment-docker.md)
 
-## 🏳‍🌈 Architecture of StreamPark
+# What's this?
 
-The overall architecture of StreamPark is shown in the following figure. StreamPark consists of three parts, they are StreamPark-core, StreamPark-pump, and StreamPark-console.
+With the rise of language models for generating images from text, SolidUI wants to help people quickly build visualization tools. The visualization content includes 2D, 3D, and 3D scenes, so as to quickly construct 3D data presentation scenes. SolidUI is an innovative project that aims to combine natural language processing (NLP) with computer graphics to realize the function of Vincent diagram. By building a self-developed Wensheng graph language model, SolidUI uses the RLHF (Reinforcement Learning Human Feedback) process to realize the process from text description to graph generation.
 
-![StreamPark Archite](/doc/image_en/streampark_archite.png)
+## Self-developed Wensheng graph language model
 
-### 1️⃣ StreamPark-core
+SolidUI's Vincent graph language model is a deep learning model that can convert natural language descriptions input by users into specific graphical representations. This model is trained on a large amount of text and graphics data, and learns the mapping relationship from text to graphics. To achieve this goal, SolidUI's self-developed Vincent graph language model has the following characteristics:
 
-The positioning of `StreamPark-core` is a framework uesd while developing, it focuses on coding development, regulates configuration files, and develops in the convention over configuration guide.
-StreamPark-core provides a development-time RunTime Content and a series of out-of-the-box Connectors. Cumbersome operations are simplified by extending `DataStream-related` methods and integrating DataStream and `Flink sql` api .
-development efficiency and development experience will be highly improved because users can focus on the business.
+* Combining NLP and computer graphics to realize the process from text description to graphic generation
+* Can handle various types of graphics, such as 2D, 3D and scenes, etc.
+* The model training process involves a large amount of text and graphics data to ensure the quality and accuracy of the generated graphics
 
-### 2️⃣ StreamPark-pump
+## RLHF process
 
-`StreamPark-pump` is a component similar to `flinkx` which is used for data extraction. It is developed based on various connectors provided in `StreamPark-core` and will be integrated into `StreamPark-console`.
-The purpose of developing StreamPark-pump is to create a convenient, fast, out-of-the-box extraction and migration component for real-time big data. We expect it could solve the real-time data source fetching problem.
-`StreamPark-pump` is still in planning.
+SolidUI uses the RLHF (Reinforcement Learning Human Feedback) process to optimize the performance of the Vincent graph language model. The process leverages human feedback to guide the model's learning process, enabling the model to better meet user needs. The main steps of the RLHF process include:
 
-### 3️⃣ StreamPark-console
+* Collect Feedback: Users rate the generated graphs, providing feedback on the quality and accuracy of the graphs.
+* Updating the model: Based on the feedback collected, the model is updated using reinforcement learning algorithms to improve the quality and accuracy of the generated graphics.
+* Iterative optimization: The process of collecting feedback and updating the model is repeated until the model performance reaches a satisfactory level.
 
-`StreamPark-console` is a comprehensive real-time `low code` data platform that can manage `Flink` tasks more convenient.
-It integrates the experience of many best practices and integrates many functions such as project compilation, release,
-parameter configuration, startup, `savepoint`, `flame graph`, `Flink SQL`, monitoring, etc.,
-which greatly simplifies the daily operation of Flink tasks and maintenance. The ultimate goal is to create a one-stop big data platform,
-which can provide a solution that integrates flow and batch, and integrates lake and warehouse.
-This platform uses technologies including but not limited to:
+Through this process, SolidUI's Vincent graph language model is able to continuously learn and improve from user feedback, producing graphics of higher quality and accuracy.
 
-* [Apache Flink](http://flink.apache.org)
-* [Apache YARN](http://hadoop.apache.org)
-* [Spring Boot](https://spring.io/projects/spring-boot/)
-* [Mybatis](http://www.mybatis.org)
-* [Mybatis-Plus](http://mp.baomidou.com)
-* [Flame Graph](http://www.brendangregg.com/FlameGraphs)
-* [JVM-Profiler](https://github.com/uber-common/jvm-profiler)
-* [Vue](https://cn.vuejs.org/)
-* [VuePress](https://vuepress.vuejs.org/)
-* [Ant Design of Vue](https://antdv.com/)
-* [ANTD PRO VUE](https://pro.antdv)
-* [xterm.js](https://xtermjs.org/)
-* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
-* ...
+![Version 0.1.0](/doc/image/designpage.png)
 
+# Document
 
-Thanks for the respect given by the above excellent open source projects and many unmentioned excellent open source projects
+For a complete list of documentation for SolidUI v0.1.0, see [SolidUI-Doc](https://website.solidui.top/)
+
+# Contribute
+
+We welcome and look forward to more contributors participating in building SolidUI, whether it is code, documentation, or other forms of contribution that can help the community.
+
+# Contact US
+
+- For any questions and suggestions about SolidUI, you can submit an issue for tracking, processing and experience sharing
+- [twitter](https://twitter.com/dlimeng192048)
+- [youtube](https://www.youtube.com/@dlimeng)
+- [bilibili](https://space.bilibili.com/472576729) (in Chinese)
+- [slack](https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA)
+- You can scan the QR code below and join our WeChat group for faster response (in Chinese)
+
+![SolidUI1](/image/join_wechat.png)
+
+- WeChat Official Account (in Chinese)
+
+![SolidUI2](/image/wx_qr.png)
+
+# Who is using SolidUI
+
+We created an issue [[Who is Using SolidUI]](https://github.com/CloudOrc/SolidUI/issues/1) for user feedback and documentation of who is using SolidUI.
+
+# Contributors
+
+Thanks to everyone who contributed PR~ 🎉🎉🎉
+
+<a href="https://github.com/CloudOrc/SolidUI/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=CloudOrc/SolidUI" />
+</a>
+
+# Thanks And Support
+
+We are very grateful for your support and recognition of our project and development work. In open source software development, we deeply know that user and community feedback and support are crucial. Our project has provided a README and Issue system to facilitate user deployment and problem solving, while also helping to increase project activity. We will prioritize issues raised in the issues.
+
+If you are interested in the community, welcome to participate (code, documentation, use), welcome to participate in any form.
+
+If you feel that the SolidUI project is valuable to you and are willing to support our development work, please give the project a little star or [sponsor us](https://afdian.net/a/solidui).

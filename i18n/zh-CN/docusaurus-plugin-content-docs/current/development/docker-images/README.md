@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ## 2.镜像构建
 
-### 2.1 服务端镜像构建
+### 2.1 服务端镜像构建-entrance-server
 
 ```shell script
 tar -zxvf solidui-x.x.x-bin.tar.gz
@@ -24,8 +24,21 @@ docker build  -f ./docker/Dockerfile  -t  solidui-entrance:x.x.x .
 
 ```
 
+### 2.2 服务端镜像构建-soliduimodelui (0.2.0版本后)
+```shell script
+tar -zxvf solidui-x.x.x-bin.tar.gz
+cd solidui-x.x.x-bin
+# 修改.env配置文件
+vi soliduimodelui/.env
+SNAKEMQ_LISTENER=0.0.0.0
+SNAKEMQ_CONNECTOR=soliduimodelui
 
-### 2.2 前端镜像构建
+docker build  -f ./soliduimodelui/docker/Dockerfile  -t  soliduimodelui:x.x.x .
+```
+
+
+
+### 2.3 前端镜像构建
 
 ```shell script
 

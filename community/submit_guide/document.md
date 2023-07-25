@@ -25,12 +25,12 @@ Good documentation is critical for any type of software. Any contribution that c
 
 ## Get the document project
 
-Documentation for the StreamPark project is maintained in a separate [git repository](https://github.com/apache/incubator-streampark-website).
+Documentation for the StreamPark project is maintained in a separate [git repository](https://github.com/CloudOrc/SolidUI-Website.git).
 
 First you need to fork the document project into your own github repository, and then clone the document to your local computer.
 
 ```shell
-git clone git@github.com:<your-github-user-name>/incubator-streampark-website
+git clone git@github.com:<your-github-user-name>/SolidUI-Website.git
 ```
 
 ## Preview and generate static files
@@ -109,7 +109,7 @@ css and other style files are placed in the `src/css` directory
 
 ### Home page modification
 
-Visit the page https://streampark.apache.org/
+Visit the page https://website.solidui.top/
 Located in `src/pages/home`
 
 ```
@@ -120,7 +120,7 @@ Located in `src/pages/home`
 
 ### Team page modification
 
-Visit the page https://streampark.apache.org/team
+Visit the page https://website.solidui.top/team
 Located in `src/pages/team`
 
 ```
@@ -132,7 +132,7 @@ Located in `src/pages/team`
 
 ### User list page modification
 
-Visit the page https://streampark.apache.org/user
+Visit the page https://website.solidui.top/user
 
 ```
 Located in `src/pages/user`

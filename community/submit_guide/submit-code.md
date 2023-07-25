@@ -21,7 +21,7 @@ sidebar_position: 2
     limitations under the License.
 -->
 
-* First from the remote repository <https://github.com/apache/incubator-streampark.git> fork a copy of the code into your own repository
+* First from the remote repository <https://github.com/CloudOrc/SolidUI.git> fork a copy of the code into your own repository
 
 * There are currently three branches in the remote repository:
     * **dev**   daily development branch
@@ -33,13 +33,13 @@ sidebar_position: 2
 * Clone your repository to your local
 
     ```shell
-    git clone git@github.com:apache/incubator-streampark.git
+    git clone git@github.com:CloudOrc/SolidUI.git
     ```
 
 * Add remote repository address, named upstream
 
     ```shell
-    git remote add upstream git@github.com:apache/incubator-streampark.git
+    git remote add upstream git@github.com:CloudOrc/SolidUI.git
     ```
 
 * View repository
@@ -63,12 +63,6 @@ sidebar_position: 2
     git merge --no-ff upstream/dev
     ```
 
-* If remote branch has a new branch such as `dev-1.0`, you need to synchronize this branch to the local repository
-
-    ```shell
-    git checkout -b dev-1.0 upstream/dev-1.0
-    git push --set-upstream origin dev-1.0
-    ```
 
 * After modifying the code locally, submit it to your own repository:
 

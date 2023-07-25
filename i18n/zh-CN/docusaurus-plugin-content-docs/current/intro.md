@@ -4,74 +4,94 @@ title: '框架介绍'
 sidebar_position: 1
 ---
 
-# StreamPark
-make stream processing easier!!!
+# 介绍
 
-> 一个神奇的框架,让流处理更简单
+AI生成可视化原型设计和编辑平台，支持2D，3D模型，结合LLM(Large Language Model) 快速编辑。
 
-## 🚀 什么是StreamPark
+## 核心特点
 
-实时即未来,在实时处理流域 `Apache Spark` 和 `Apache Flink` 是一个伟大的进步,尤其是`Apache Flink`被普遍认为是下一代大数据流计算引擎, 我们在使用 `Flink` & `Spark` 时发现从编程模型, 启动配置到运维管理都有很多可以抽象共用的地方, 我们将一些好的经验固化下来并结合业内的最佳实践, 通过不断努力终于诞生了今天的框架 —— `StreamPark`, 项目的初衷是 —— 让流处理更简单,
-使用`StreamPark`开发,可以极大降低学习成本和开发门槛, 让开发者只用关心最核心的业务,`StreamPark` 规范了项目的配置,鼓励函数式编程,定义了最佳的编程方式,提供了一系列开箱即用的`Connectors`,标准化了配置、开发、测试、部署、监控、运维的整个过程, 提供了`scala`和`java`两套api,
-其最终目的是打造一个一站式大数据平台,流批一体,湖仓一体的解决方案
+* 极简流程，简洁设计
+* 多种2D图例
+* 多种3D图例
+* 多种3D场景
+* 支持多种数据源
+* 支持Huggingface space
+* 支持插件机器人
+* 支持SolidUI-Model
+* 支持Large Language Model
+* 容器化部署
 
-<video src="http://assets.streamxhub.com/streamx-video.mp4" controls="controls" width="100%" height="100%"></video>
+# 快速开始
 
-## 🎉 Features
+为了快速体验
 
-* 开发脚手架
-* 多版本Flink支持(1.11、1.12、1.13、1.14、1.15)
-* 一系列开箱即用的connectors
-* 支持项目编译功能(maven 编译)
-* 在线参数配置
-* 支持`Application` 模式, `Yarn-Per-Job`模式启动
-* 快捷的日常操作(任务`启动`、`停止`、`savepoint`以及从`savepoint`恢复)
-* 支持火焰图
-* 支持`notebook`(在线任务开发)
-* 项目配置和依赖版本化管理
-* 支持任务备份、回滚(配置回滚)
-* 在线管理依赖(maven pom)和自定义jar
-* 自定义udf、连接器等支持
-* Flink SQL WebIDE
-* 支持catalog、hive
-* 任务运行失败发送告警邮件（支持钉钉、微信、邮件、飞书等）
-* 支持失败重启重试
-* 从任务`开发`阶段到`部署管理`全链路支持
-* ...
+从 [Standalone](i18n/zh-CN/docusaurus-plugin-content-docs/current/deployment/overall/deployment-standalone.md) 开始
 
-## 🏳‍🌈 组成部分
+从 [Docker](i18n/zh-CN/docusaurus-plugin-content-docs/current/deployment/overall/deployment-docker.md) 开始
 
-`StreamPark`有三部分组成,分别是`streampark-core`,`streampark-pump` 和 `streampark-console`
+# 这是什么？
 
-![StreamPark Archite](/doc/image/streampark_archite.png)
+随着文本生成图像的语言模型兴起，SolidUI想帮人们快速构建可视化工具，可视化内容包括2D,3D,3D场景，从而快速构三维数据演示场景。SolidUI 是一个创新的项目，旨在将自然语言处理（NLP）与计算机图形学相结合，实现文生图功能。通过构建自研的文生图语言模型，SolidUI 利用 RLHF (Reinforcement Learning Human Feedback) 流程实现从文本描述到图形生成的过程。
 
-### 1️⃣ streampark-core
+## 自研文生图语言模型
 
-`streampark-core` 定位是一个开发时框架,关注编码开发,规范了配置文件,按照约定优于配置的方式进行开发,提供了一个开发时 `RunTime Content`和一系列开箱即用的`Connector`,扩展了`DataStream`相关的方法,融合了`DataStream`和`Flink sql` api,简化繁琐的操作,聚焦业务本身,提高开发效率和开发体验
+SolidUI 的文生图语言模型是一个深度学习模型，可以将用户输入的自然语言描述转换为具体的图形表示。这个模型在大量文本和图形数据上进行训练，学习到从文本到图形的映射关系。为了实现这一目标，SolidUI 的自研文生图语言模型具有以下特点：
 
-### 2️⃣ streampark-pump
+* 结合 NLP 和计算机图形学，实现从文本描述到图形生成的过程
+* 可处理多种类型的图形，如 2D、3D 和场景等
+* 模型训练过程涉及大量的文本和图形数据，以确保生成的图形质量和准确性
 
-`pump` 是抽水机,水泵的意思,`streampark-pump`的定位是一个数据抽取的组件,类似于`flinkx`,基于`streampark-core`中提供的各种`connector`开发,目的是打造一个方便快捷,开箱即用的大数据实时数据抽取和迁移组件,并且集成到`streampark-console`中,解决实时数据源获取问题,目前在规划中
+## RLHF 流程
 
-### 3️⃣ streampark-console
+SolidUI 使用 RLHF (Reinforcement Learning Human Feedback) 流程来优化文生图语言模型的性能。该流程利用人类反馈来指导模型的学习过程，从而使模型能够更好地满足用户需求。RLHF 流程的主要步骤包括：
 
-`streampark-console` 是一个综合实时数据平台,低代码(`Low Code`)平台,可以较好的管理`Flink`任务,集成了项目编译、发布、参数配置、启动、`savepoint`,火焰图(`flame graph`),`Flink SQL`,
-监控等诸多功能于一体,大大简化了`Flink`任务的日常操作和维护,融合了诸多最佳实践。旧时王谢堂前燕,飞入寻常百姓家,让大公司有能力研发使用的项目,现在人人可以使用,
-其最终目标是打造成一个实时数仓,流批一体的一站式大数据解决方案,该平台使用但不仅限以下技术:
+* 收集反馈：用户对生成的图形进行评价，提供关于图形质量和准确性的反馈。
+* 更新模型：根据收集到的反馈，使用强化学习算法对模型进行更新，以提高生成图形的质量和准确性。
+* 迭代优化：重复收集反馈和更新模型的过程，直到模型性能达到满意的水平。
 
-* [Apache Flink](http://flink.apache.org)
-* [Apache YARN](http://hadoop.apache.org)
-* [Spring Boot](https://spring.io/projects/spring-boot/)
-* [Mybatis](http://www.mybatis.org)
-* [Mybatis-Plus](http://mp.baomidou.com)
-* [Flame Graph](http://www.brendangregg.com/FlameGraphs)
-* [JVM-Profiler](https://github.com/uber-common/jvm-profiler)
-* [Vue](https://cn.vuejs.org/)
-* [VuePress](https://vuepress.vuejs.org/)
-* [Ant Design of Vue](https://antdv.com/)
-* [ANTD PRO VUE](https://pro.antdv)
-* [xterm.js](https://xtermjs.org/)
-* [Monaco Editor](https://microsoft.github.io/monaco-editor/)
-* ...
+通过这一流程，SolidUI 的文生图语言模型能够不断地从用户反馈中学习和进步，生成更高质量和准确性的图形。
 
-感谢以上优秀的开源项目和很多未提到的优秀开源项目,给予最大的respect.
+![0.1.0版本](/doc/image/designpage.png)
+
+# 文档
+
+SolidUI v0.1.0 的完整文档列表，请参见 [SolidUI-Doc](https://website.solidui.top/zh-CN/)
+
+# 贡献
+
+我们非常欢迎和期待更多的贡献者参与共建 SolidUI, 不论是代码、文档，或是其他能够帮助到社区的贡献形式。
+
+# 联系我们
+
+- 对 SolidUI 的任何问题和建议，可以提交 issue，以便跟踪处理和经验沉淀共享
+- [twitter](https://twitter.com/dlimeng192048)
+- [youtube](https://www.youtube.com/@dlimeng)
+- [bilibili](https://space.bilibili.com/472576729) (in Chinese)
+- [slack](https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA)
+- 可以扫描下面的二维码，加入我们的微信群，以获得更快速的响应 (in Chinese)
+
+![SolidUI1](/image/join_wechat.png)
+
+- 微信公众号 (in Chinese)
+
+![SolidUI2](/image/wx_qr.png)
+
+# 谁在使用 SolidUI
+
+我们创建了一个 issue [[Who is Using SolidUI]](https://github.com/CloudOrc/SolidUI/issues/1) 以便用户反馈和记录谁在使用 SolidUI.
+
+# Contributors
+
+Thanks to everyone who contributed PR~ 🎉🎉🎉
+
+<a href="https://github.com/CloudOrc/SolidUI/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=CloudOrc/SolidUI" />
+</a>
+
+# 感谢与赞助
+
+我们非常感谢您对我们项目和开发工作的支持和认可。在开源软件开发过程中，我们深知用户和社区的反馈与支持是至关重要的。我们的项目已经提供了 README 和 Issue 系统，方便用户进行部署和解决问题，同时也有助于提升项目的活跃度。我们会优先关注 issue 中提出的问题。
+
+如果您对于社区有兴趣，欢迎参与（代码，文档，使用），欢迎任何形式参与。
+
+如果您觉得 SolidUI 项目对您有价值，并愿意支持我们的开发工作，请为项目点个小星星或[赞助我们](https://afdian.net/a/solidui) 。

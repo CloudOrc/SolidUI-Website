@@ -1,10 +1,10 @@
-# StreamPark Website
+# SolidUI Website
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 [English](README.md) | [中文](README_ZH.md)
 
-This is the repository containing all the source code of `http://streampark.apache.org`.
-This guide will guide you how to contribute to the Apache StreamPark(Incubating) website.
+This is the repository containing all the source code of `https://website.solidui.top/`.
+This guide will guide you how to contribute to the SolidUI website.
 
 
 ## Branch
@@ -92,7 +92,7 @@ css and other style files are placed in the `src/css` directory
 > Except for the homepage, team, user, Docs>All Version module page, all other pages can be directly jumped to the corresponding github resource modification page through the'Edit this page' button at the bottom
 
 ### 3.5 Home page modification
-Visit the page http://streampark.apache.org
+Visit the page [https://website.solidui.top/](https://website.solidui.top/)
 Located in `src/pages/home`
 
 ```
@@ -101,7 +101,7 @@ Located in `src/pages/home`
 │ index.less     // homepage style
 ```
 ### 3.6 Team page modification
-Visit the page http://streampark.apache.org/team
+Visit the page [https://website.solidui.top/zh-CN/team](https://website.solidui.top/zh-CN/team)
 Located in `src/pages/team`
 ```
 ├─team
@@ -110,7 +110,7 @@ Located in `src/pages/team`
 │ index.less
 ```
 ### 3.7 User list page modification
-Visit the page http://streampark.apache.org/user
+Visit the page [https://website.solidui.top/zh-CN/user/](https://website.solidui.top/zh-CN/user/)
 ```
 Located in `src/pages/user`
 └─versions

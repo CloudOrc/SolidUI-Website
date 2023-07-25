@@ -1,5 +1,5 @@
 ---
-id: 'development'
+id: 'develop-contributing'
 title: 'Development Contribution'
 sidebar_position: 3
 ---
@@ -24,7 +24,7 @@ Helping to answer usage questions in Issues is a very valuable way to contribute
 
 ### 1.4 Documentation improvements
 
-The SolidUI documentation is located at [SolidUI_Doc](https://github.com/CloudOrc/SolidUI-Doc), and the completion of the documentation is also crucial to the development of SolidUI.
+The SolidUI documentation is located at [SolidUI_Doc](https://website.solidui.top/), and the completion of the documentation is also crucial to the development of SolidUI.
 
 ### 1.5 Others
 
@@ -131,7 +131,7 @@ git push origin dev-fix dev-fix
 - If you don't know how to initiate a PR to an open source project, please refer to [About pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull -requests)
 - Whether it's a bug fix or a new feature development, please submit a PR to the dev branch
 
-- PR and commit name follow the principle of `<type>(<scope>): <subject>`, for details, please refer to [Commit message and Change log writing guide](https://github.com/CloudOrc/SolidUI-Doc/blob /main/zh_CN/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3/DevelopmentCommitMessage/README.md)
+- PR and commit name follow the principle of `<type>(<scope>): <subject>`, for details, please refer to [Commit message and Change log writing guide](docs/development/development-commit/README3.md)
 - If a PR includes new features, documentation updates should be included in this PR
 - If the PR is not ready to be merged, prefix the name with [WIP] (WIP = work-in-progress)
 - All commits to dev-* branches need to be reviewed at least once before they can be merged
