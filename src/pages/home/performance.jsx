@@ -7,9 +7,9 @@ import Coding from "../../../static/home/coding.svg"
 import "./performance.less";
 
 export default function () {
-  const isBrowser = useIsBrowser();
-  const language = isBrowser && location.pathname.indexOf('/zh-CN/') === 0 ? 'zh-CN' : 'en'
-  const dataSource = config?.[language];
+  // const isBrowser = useIsBrowser();
+  // const language = isBrowser && location.pathname.indexOf('/zh-CN/') === 0 ? 'zh-CN' : 'en'
+  // const dataSource = config?.[language];
 
   return (
     <div className="section py-6 py-md-7 bg-white">
