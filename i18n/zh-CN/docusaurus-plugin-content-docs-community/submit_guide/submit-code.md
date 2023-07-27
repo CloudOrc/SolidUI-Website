@@ -1,6 +1,6 @@
 ---
 id: 'submit_code'
-title: 'Submit Code'
+title: '提交代码'
 sidebar_position: 2
 ---
 
