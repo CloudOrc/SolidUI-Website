@@ -16,24 +16,22 @@
 #  under the License.
 
 github:
-  description: "Apache streampark Website"
-  homepage: https://streampark.apache.org/
+  description: "SolidUI"
+  homepage: https://website.solidui.top/
   features:
     issues: false
     projects: false
     wiki: false
   labels:
-    - streampark
+    - solidui
   enabled_merge_buttons:
     squash:  true
     merge:   false
     rebase:  false
 
 publish:
-  whoami: asf-site
+  whoami: main
 
 notifications:
-  commits:      commits@streampark.apache.org
-  issues:       issues@streampark.apache.org
-  pullrequests: issues@streampark.apache.org
-  jobs:         builds@streampark.apache.org
+  issues:       https://github.com/CloudOrc/SolidUI/issues
+  pullrequests: https://github.com/CloudOrc/SolidUI/pulls

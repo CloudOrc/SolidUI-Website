@@ -102,9 +102,9 @@ export default function () {
           </div>
           {/* hero image */}
           <div className="col-6 align-self-center" >
-            <div className="mt-5 mt-2 text-right" data-aos="fade-up" data-aos-delay="100">
-              <StartUp className="img-fluid" style={{transform: 'translateY(3.3rem)'}} />
-            </div>
+            {/*<div className="mt-5 mt-2 text-right" data-aos="fade-up" data-aos-delay="100">*/}
+            {/*  <StartUp className="img-fluid" style={{transform: 'translateY(3.3rem)'}} />*/}
+            {/*</div>*/}
           </div>
         </div>
       </div >

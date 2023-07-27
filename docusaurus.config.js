@@ -284,9 +284,9 @@ const config = {
                             <div class="wechat-dropdown"><img src="/image/join_wechat.png" alt="weChat"></div>
                           </a>
                         </li>
-                        <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fa fa-slack"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/dlimeng192048"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA"><i class="fa fa-slack"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dlimeng"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
               `,
