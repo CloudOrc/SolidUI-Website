@@ -103,7 +103,7 @@ modelui
 
 ### 4.1 准备工作
 
-参考[前端部署](i18n/zh-CN/docusaurus-plugin-content-docs/current/deployment/front-end/deployment-web.md)
+参考[前端部署](deployment-web.md)
 
 ### 4.2 启动
 
