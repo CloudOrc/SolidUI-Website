@@ -1,7 +1,7 @@
 ---
 id: 'development-release'
 title: 'Project Release Process'
-sidebar_position: 1
+sidebar_position: 6
 ---
 
 SolidUI project release process

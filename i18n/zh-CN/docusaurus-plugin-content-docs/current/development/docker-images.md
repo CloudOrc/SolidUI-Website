@@ -1,7 +1,7 @@
 ---
 id: 'development-docker'
 title: 'Docker 编译'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # SolidUI Docker 编译

@@ -1,11 +1,10 @@
 ---
 id: 'development-construction'
 title: '项目共建流程'
-sidebar_position: 1
+sidebar_position: 5
 ---
 
-SolidUI项目共建流程
--------------------------
+# SolidUI项目共建流程
 
 ## 流程列表
 
