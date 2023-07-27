@@ -1,11 +1,10 @@
 ---
 id: 'development-release'
 title: '项目发版流程'
-sidebar_position: 1
+sidebar_position: 6
 ---
 
-SolidUI项目发版流程
--------------------------
+# SolidUI项目发版流程
 
 ## 授权
 

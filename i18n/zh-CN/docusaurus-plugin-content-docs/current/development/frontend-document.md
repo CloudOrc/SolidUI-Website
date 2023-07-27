@@ -1,7 +1,7 @@
 ---
 id: 'development-front'
 title: '前端编译'
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # SolidUI 前端编译

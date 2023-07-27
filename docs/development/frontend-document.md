@@ -1,7 +1,7 @@
 ---
 id: 'development-front'
 title: 'Front-End Compilation'
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # SolidUI front-end compilation

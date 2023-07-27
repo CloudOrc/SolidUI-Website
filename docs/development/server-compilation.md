@@ -1,7 +1,7 @@
 ---
 id: 'development-server'
 title: 'Server-side Compilation'
-sidebar_position: 1
+sidebar_position: 7
 ---
 
 # SolidUI Server-side Compilation

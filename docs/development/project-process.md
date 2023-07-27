@@ -1,12 +1,12 @@
 ---
 id: 'development-construction'
 title: 'Co-Construction Process'
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 
-SolidUI project co-construction process
--------------------------
+# SolidUI project co-construction process
+
 
 ## Process list
 

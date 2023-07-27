@@ -1,7 +1,7 @@
 ---
 id: 'development-server'
 title: '服务端编译'
-sidebar_position: 1
+sidebar_position: 7
 ---
 
 # SolidUI 服务端编译
