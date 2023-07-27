@@ -26,9 +26,9 @@ AI-generated visualization prototyping and editing platform, support 2D, 3D mode
 
 For quick experience
 
-Want to start with [Standalone](docs/deployment/overall/deployment-standalone.md)
+Want to start with [Standalone](deployment/deployment-standalone.md)
 
-Want to start with [Docker](docs/deployment/overall/deployment-docker.md)
+Want to start with [Docker](deployment/deployment-docker.md)
 
 # What's this?
 

@@ -25,9 +25,9 @@ AI生成可视化原型设计和编辑平台，支持2D，3D模型，结合LLM(L
 
 为了快速体验
 
-从 [Standalone](i18n/zh-CN/docusaurus-plugin-content-docs/current/deployment/overall/deployment-standalone.md) 开始
+从 [Standalone](deployment/deployment-standalone.md) 开始
 
-从 [Docker](i18n/zh-CN/docusaurus-plugin-content-docs/current/deployment/overall/deployment-docker.md) 开始
+从 [Docker](deployment/deployment-docker.md) 开始
 
 # 这是什么？
 

@@ -102,7 +102,7 @@ modelui
 
 ### 4.1 Preparations
 
-Refer to [Frontend Deployment](docs/deployment/front-end/deployment-web.md)
+Refer to [Frontend Deployment](deployment-web.md)
 
 ### 4.2 Startup
 

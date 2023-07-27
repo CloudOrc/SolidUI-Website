@@ -1,6 +1,6 @@
 ---
 id: 'deployment-docker'
-title: 'SolidUI Docker-Compose deployment'
+title: 'Docker-Compose deployment'
 sidebar_position: 2
 ---
 
