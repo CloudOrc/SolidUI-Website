@@ -30,7 +30,7 @@ github:
     rebase:  false
 
 publish:
-  whoami: asf-site
+  whoami: main
 
 notifications:
   issues:       https://github.com/CloudOrc/SolidUI/issues
