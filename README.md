@@ -110,13 +110,5 @@ Located in `src/pages/team`
 │ index.less
 ```
 ### 3.7 User list page modification
-Visit the page [https://website.solidui.top/zh-CN/user/](https://website.solidui.top/zh-CN/user/)
-```
-Located in `src/pages/user`
-└─versions
-        data.json
-        images.json
-        index.js
-        index.less
-        languages.json
-```
+Visit the page [https://github.com/CloudOrc/SolidUI/issues/1](https://github.com/CloudOrc/SolidUI/issues/1)
+

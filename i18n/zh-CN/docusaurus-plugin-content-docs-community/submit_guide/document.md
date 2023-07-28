@@ -132,14 +132,4 @@ Located in `src/pages/team`
 
 ### User list page modification
 
-Visit the page https://website.solidui.top/user
-
-```
-Located in `src/pages/user`
-└─versions
-        data.json
-        images.json
-        index.js
-        index.less
-        languages.json
-```
+Visit the page https://github.com/CloudOrc/SolidUI/issues/1
