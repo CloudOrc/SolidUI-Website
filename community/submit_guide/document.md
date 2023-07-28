@@ -134,12 +134,3 @@ Located in `src/pages/team`
 
 Visit the page https://github.com/CloudOrc/SolidUI/issues/1
 
-```
-Located in `src/pages/user`
-└─versions
-        data.json
-        images.json
-        index.js
-        index.less
-        languages.json
-```
