@@ -119,15 +119,5 @@ dev  默认分支
 
 ### 3.7  用户列表页面修改
 
-访问页面：[https://website.solidui.top/zh-CN/user/](https://website.solidui.top/zh-CN/user/)
+访问页面：[https://github.com/CloudOrc/SolidUI/issues/1](https://github.com/CloudOrc/SolidUI/issues/1)
 
-位于 `src/pages/user`：
-
-```
-└─versions
-        data.json
-        images.json
-        index.js
-        index.less
-        languages.json
-```

@@ -132,7 +132,7 @@ Located in `src/pages/team`
 
 ### User list page modification
 
-Visit the page https://website.solidui.top/user
+Visit the page https://github.com/CloudOrc/SolidUI/issues/1
 
 ```
 Located in `src/pages/user`
