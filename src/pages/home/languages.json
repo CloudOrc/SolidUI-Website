@@ -39,7 +39,7 @@
       {
         "title": "三方插件机器人",
         "icon": "lni-game",
-        "details": "为了让更多人使用SolidUI支持插件机器人，例如Huggingface space"
+        "details": "为了提供更好服务，支持插件机器人，例如Huggingface space"
       },
       {
         "title": "可视化模型",
@@ -97,7 +97,7 @@
       {
         "title": "Three-party plug-in robot",
         "icon": "lni-game",
-        "details": "In order to allow more people to use SolidUI to support plug-in robots, such as Huggingface space"
+        "details": "In order to provide better service, support plug-in robots, such as Huggingface space"
       },
       {
         "title": "Visualization Model",
