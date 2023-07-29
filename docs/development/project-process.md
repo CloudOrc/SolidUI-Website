@@ -16,10 +16,10 @@ sidebar_position: 5
 4. code review -- PMC member
 5. PR merge -- PMC member
 6. PR commit to the master branch -- Contributor (master version)
-7. Submit relevant documents to SolidUI-Doc (installation and deployment documents, user usage documents, architecture design documents) Submit PR -- Contributor (lead version)
-8. SolidUI-Doc code review -- PMC member
-9. SolidUI-Doc PR merge -- PMC member
-10. SolidUI-Doc PR commit to the master branch -- Contributor (lead version)
+7. Submit relevant documents to SolidUI-Website (installation and deployment documents, user usage documents, architecture design documents) Submit PR -- Contributor (lead version)
+8. SolidUI-Website code review -- PMC member
+9. SolidUI-Website PR merge -- PMC member
+10. SolidUI-Website PR commit to the master branch -- Contributor (lead version)
 11. Package & Install deployment tests based on the master branch -- Contributors (lead version)/testers
 12. Invite community users for private testing -- operators /PMC members
 13. Prepare to Release Notes -- Contributor (lead version)
