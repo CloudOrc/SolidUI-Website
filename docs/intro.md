@@ -56,7 +56,7 @@ Through this process, SolidUI's Vincent graph language model is able to continuo
 
 # Document
 
-For a complete list of documentation for SolidUI v0.1.0, see [SolidUI-Doc](https://website.solidui.top/)
+For a complete list of documentation for SolidUI , see [SolidUI-Website](https://website.solidui.top/)
 
 # Contribute
 
