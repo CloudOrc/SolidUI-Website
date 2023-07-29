@@ -132,7 +132,7 @@ git push origin dev-fix dev-fix
 - If you don't know how to initiate a PR to an open source project, please refer to [About pull requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull -requests)
 - Whether it's a bug fix or a new feature development, please submit a PR to the dev branch
 
-- PR and commit name follow the principle of `<type>(<scope>): <subject>`, for details, please refer to [Commit message and Change log writing guide](/docs/development/development-commit.md)
+- PR and commit name follow the principle of `<type>(<scope>): <subject>`, for details, please refer to [Commit message and Change log writing guide](/docs/development/development-commit)
 - If a PR includes new features, documentation updates should be included in this PR
 - If the PR is not ready to be merged, prefix the name with [WIP] (WIP = work-in-progress)
 - All commits to dev-* branches need to be reviewed at least once before they can be merged
