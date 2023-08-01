@@ -1,5 +1,4 @@
 ---
-slug: function-explanation-of-solidui-0.1.0
 title: SolidUI AI生成可视化，开创性开源项目，版本0.1.0 功能讲解
 tags: [SolidUI, AIGC, stable-diffusion]
 ---

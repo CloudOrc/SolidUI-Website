@@ -1,5 +1,4 @@
 ---
-slug: function-docker-communication-of-solidui
 title: SolidUI社区-独立部署和Docker通信分析
 tags: [SolidUI, AIGC, stable-diffusion]
 ---
