@@ -106,7 +106,7 @@ export default function () {
                 <a href="">
                   <img src="https://img.shields.io/github/languages/count/CloudOrc/SolidUI" className="wow fadeInUp"></img>
                 </a>
-                <a target="_blank" href="https://huggingface.co/spaces/CloudOrc/SolidUI" style={{ display: 'inline-block' }}>
+                <a target="_blank" href="https://huggingface.co/spaces/CloudOrc/SolidUI">
                   <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Spaces-blue" className="wow fadeInUp" />
                 </a>
               </div>
