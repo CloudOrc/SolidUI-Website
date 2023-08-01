@@ -1,6 +1,5 @@
 ---
-slug: function-docker-communication-of-solidui
-title: SolidUI社区-Snakemq通信源码分析
+title: SolidUI社区-独立部署和Docker通信分析
 tags: [SolidUI, AIGC, stable-diffusion]
 ---
 

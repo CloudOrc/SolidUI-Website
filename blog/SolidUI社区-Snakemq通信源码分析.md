@@ -1,5 +1,4 @@
 ---
-slug: function-snakemq-communication-of-solidui
 title: SolidUI社区-Snakemq通信源码分析
 tags: [SolidUI, AIGC, stable-diffusion]
 ---
