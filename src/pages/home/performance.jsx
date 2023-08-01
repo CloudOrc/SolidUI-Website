@@ -53,19 +53,19 @@ export default function () {
 
         {/*</div>*/}
         {/*<div className='border-dot'></div>*/}
-        {/*<div className="row mb-5 mt-5 mb-lg-7">*/}
-        {/*  <div className="col-6 align-self-center">*/}
-        {/*    <div className="px-5 px-md-7 mb-5 my-lg-0" data-aos="fade-up" data-aos-delay="100">*/}
-        {/*      <Coding className="img-fluid" />*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
+        <div className="row mb-5 mt-5 mb-lg-7">
+          <div className="col-6 align-self-center">
+            <div className="px-5 px-md-7 mb-5 my-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <Coding className="img-fluid" />
+            </div>
+          </div>
 
-        {/*  <div className="col-6 ">*/}
-        {/*    <div className="mb-5 my-lg-0" data-aos="fade-up" data-aos-delay="200">*/}
-        {/*      <img src={useBaseUrl('/home/code.png')} alt=""></img>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+          <div className="col-6 ">
+            <div className="mb-5 my-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <img src={useBaseUrl('/home/ai2d.png')} alt=""></img>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
