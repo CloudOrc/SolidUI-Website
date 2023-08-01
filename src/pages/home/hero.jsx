@@ -97,10 +97,16 @@ export default function () {
                 <a href="https://www.apache.org/licenses/LICENSE-2.0.html">
                   <img src="https://img.shields.io/badge/license-Apache%202-4EB1BA.svg" className="wow fadeInUp"></img>
                 </a>
-                <img src="https://img.shields.io/github/stars/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
-                <img src="https://img.shields.io/github/forks/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
-                <img src="https://img.shields.io/github/languages/count/CloudOrc/SolidUI" className="wow fadeInUp"></img>
-                <a target="_blank" href="https://huggingface.co/spaces/CloudOrc/SolidUI">
+                <a href="">
+                  <img src="https://img.shields.io/github/stars/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
+                </a>
+                <a href="">
+                  <img src="https://img.shields.io/github/forks/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
+                </a>
+                <a href="">
+                  <img src="https://img.shields.io/github/languages/count/CloudOrc/SolidUI" className="wow fadeInUp"></img>
+                </a>
+                <a target="_blank" href="https://huggingface.co/spaces/CloudOrc/SolidUI" style={{ display: 'inline-block' }}>
                   <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Spaces-blue" className="wow fadeInUp" />
                 </a>
               </div>
