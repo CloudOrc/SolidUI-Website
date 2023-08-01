@@ -1,6 +1,6 @@
 ---
 title: SolidUI AI生成可视化，开创性开源项目，版本0.1.0 功能讲解
-sidebar_position: 1
+date: 2023-07-01
 tags: [SolidUI, AIGC, stable-diffusion]
 ---
 
