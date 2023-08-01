@@ -94,7 +94,7 @@ export default function () {
               </div>
            
               <div style={{ marginTop: '20px' }}  className="shields ztop d-flex justify-content-center align-items-start">
-                <a href="https://www.apache.org/licenses/LICENSE-2.0.html">
+                <a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0.html">
                   <img src="https://img.shields.io/badge/license-Apache%202-4EB1BA.svg" className="wow fadeInUp"></img>
                 </a>
                 <a href="">
