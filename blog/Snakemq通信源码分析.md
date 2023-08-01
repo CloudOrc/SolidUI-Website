@@ -1,5 +1,6 @@
 ---
 title: SolidUI社区-Snakemq通信源码分析
+sidebar_position: 2
 tags: [SolidUI, AIGC, stable-diffusion]
 ---
 

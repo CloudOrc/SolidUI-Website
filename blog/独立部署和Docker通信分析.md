@@ -1,5 +1,6 @@
 ---
 title: SolidUI社区-独立部署和Docker通信分析
+sidebar_position: 3
 tags: [SolidUI, AIGC, stable-diffusion]
 ---
 
