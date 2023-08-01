@@ -84,13 +84,11 @@ const config = {
 
         blog: {
           path: 'blog',
-          showReadingTime: true,
-          postsPerPage: 5,
+          postsPerPage: 3,
           blogSidebarCount: 'ALL',
           feedOptions:{type: 'all'},
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/CloudOrc/SolidUI-Website/edit/dev',
+          editUrl: 'https://github.com/CloudOrc/SolidUI-Website/edit/dev',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
