@@ -36,26 +36,26 @@ soliduimodelui/.env  SNAKEMQ_CONNECTOR  与server 连接ip  ，设置内网ip
 
 ### 例如
 
->数据库连接
+> 数据库连接
+
 在docker-compose.yml 中，设置了Mysql数据库名称为mysql 
 
 所以solidui-entrance application.yaml  中  datasource.url  mysql 替换 localhost
 
 soliduimodelui/.env  DB_HOST mysql 替换 localhost 
 
->soliduimodelui/.env Snakemq 通信
+> soliduimodelui/.env Snakemq 通信
+
 ```plain
 soliduimodelui/.env  SNAKEMQ_LISTENER server 监听器 ，设置0.0.0.0
 soliduimodelui/.env  SNAKEMQ_CONNECTOR  与server 连接ip  ，设置soliduimodelui
 ```
-
 
 ## 结语
 
 本文通过讲解独立部署 和 Docker 通信分析 ，告诉部署设置ip时候方式，不是盲目设置localhost就能解决，为大家后续更好共建SolidUI提供思路。
 
 
->Snakemq 通信参考 [https://mp.weixin.qq.com/s?__biz=MjM5MDQwNjIwMw==&mid=2257496764&idx=1&sn=420786eafebad5adc89e13c5e33981b8&chksm=a53f49e89248c0fe766d1c2273fa7ab12dac46cf093f56d8ddb27481d4464bf77bc2dc42df28&token=1527106529&lang=zh_CN#rd](https://mp.weixin.qq.com/s?__biz=MjM5MDQwNjIwMw==&mid=2257496764&idx=1&sn=420786eafebad5adc89e13c5e33981b8&chksm=a53f49e89248c0fe766d1c2273fa7ab12dac46cf093f56d8ddb27481d4464bf77bc2dc42df28&token=1527106529&lang=zh_CN#rd)
 ## 如果成为贡献者
 
 * 官方文档贡献。发现文档的不足、优化文档，持续更新文档等方式参与社区贡献。通过文档贡献，让开发者熟悉如何提交PR和真正参与到社区的建设。参考攻略：[https://github.com/CloudOrc/SolidUI/discussions/54](https://github.com/CloudOrc/SolidUI/discussions/54)
