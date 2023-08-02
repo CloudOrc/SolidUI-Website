@@ -33,8 +33,12 @@ SolidUI 中 soliduimodelui模块，是模型代理API，需要Web和 Kernel 通�
 
 ## Snakemq 测试代码
 
->Snakemq client.py
+
+> Snakemq client.py
+
+
 ```plain
+
 import snakemq.link
 import snakemq.packeter
 import snakemq.messaging
@@ -42,40 +46,101 @@ import snakemq.rpc
 import time
 import json
 import logging
+
+
 logging.basicConfig(format="[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s")
+
+
 logger = logging.getLogger(__name__)
+
+
 logger.setLevel(logging.INFO)
+
+
 console_handler = logging.StreamHandler()
+
+
 console_handler.setLevel(logging.INFO)
+
+
 logger.addHandler(console_handler)
+
+
 logger.setLevel(logging.INFO)
+
+
 fh = logging.FileHandler('app.log')
+
+
 logger.addHandler(fh)
+
+
 link = snakemq.link.Link()
+
+
 packeter = snakemq.packeter.Packeter(link)
+
+
 messaging = snakemq.messaging.Messaging("client", "", packeter)
+
+
 connector = ("server", 8765)
+
+
 link.add_connector(connector)
+
+
 def on_connect(connector_id):
+
+
     logger.info(f"Connected to: {connector_id}")
+
+
 link.on_connect.add(on_connect)
+
+
 def on_disconnect(connector_id):
+
+
     logger.info(f"已断开: {connector_id}")
+
+
 link.on_disconnect.add(on_disconnect)
 
+
+
 def on_recv(conn, ident, message):
+
+
     logger.info(f"client接收到: {message.data}, 来自: {ident}")
+
+
 messaging.on_message_recv.add(on_recv)
+
+
 message = snakemq.message.Message(json.dumps({"type": "status", "value": "ready"}).encode("utf-8"), ttl=600)
+
+
 messaging.send_message("server", message)
+
+
 while True:
+
+
     link.loop()
+
+
     time.sleep(0.1)
+
+
 ```
 
 
->Snakemq server.py
+> Snakemq server.py
+
+
 ```plain
+
 import snakemq.link
 import snakemq.packeter
 import snakemq.messaging
@@ -83,34 +148,81 @@ import snakemq.rpc
 import time
 import json
 import logging
+
+
 logging.basicConfig(format="[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s")
+
+
 logger = logging.getLogger(__name__)
+
+
 logger.setLevel(logging.INFO)
+
+
 console_handler = logging.StreamHandler()
+
+
 console_handler.setLevel(logging.INFO)
+
+
 logger.addHandler(console_handler)
+
+
 logger.setLevel(logging.INFO)
+
+
 fh = logging.FileHandler('app.log')
+
+
 logger.addHandler(fh)
+
+
 link = snakemq.link.Link()
+
+
 packeter = snakemq.packeter.Packeter(link)
+
+
 messaging = snakemq.messaging.Messaging("server", "", packeter)
+
+
 link.add_listener(("0.0.0.0", 8765))
+
+
 def on_recv(conn, ident, message):
+
+
     logger.info(f"server接收到: {message.data}, 来自: {ident}")
+
+
 messaging.on_message_recv.add(on_recv)
 
+
+
 message = snakemq.message.Message(json.dumps( {"type": "execute", "value": "abc"}).encode("utf-8"), ttl=600)
+
+
 messaging.send_message("client", message)
+
+
 # Main loop
+
+
 while True:
+
+
     link.loop()
+
+
     time.sleep(0.1)
+
+
 ```
 
 
->Dockerfile
-```plain
+> Dockerfile
+
+```shell script
 FROM python:3.8
 WORKDIR /opt/snaketmq-test
 
@@ -121,9 +233,10 @@ COPY . .
 CMD ["python", "server.py"]
 ```
 
-## 
->Dockerfile  build & run
-```plain
+
+> Dockerfile  build & run
+
+```shell script
 docker build -t snaketmq-test . 
 
 docker network create mynet
@@ -148,6 +261,7 @@ client  connector = ("server", 8765)  link.add_connector(connector) 这行代码
 * connector = ("server", 8765) : 创建一个元组connector,里面包含了SnakeMQ服务器的地址"server"和端口8765。
 * link.add_connector(connector): 调用link对象(这里应该是SnakeMQ的连接对象)的add_connector方法,传入参数connector,将上一步创建的连接信息添加到连接对象中。
 * 综合来看,这行代码的作用就是创建一个连接元组,包含SnakeMQ服务器的地址和端口,然后将这个连接信息添加到SnakeMQ的连接对象中,以建立SnakeMQ的客户端连接。
+
 ## 结语
 
 本文通过Snakemq 案例 来解释SolidUI 内部通信，让大家明白配置地址时候ip 为什么这样设置，目的是为了一一对应，不是盲目设置localhost就能解决，为大家后续更好共建SolidUI提供思路。
