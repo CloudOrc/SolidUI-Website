@@ -12,7 +12,7 @@ sidebar_position: 4
 
 该步骤仅第一次使用时需要执行,如果已有node环境，可跳过
 
-将Node.js下载到本地，安装即可。下载地址：http://nodejs.cn/download/ （建议使用node v16版本 >= linkis-1.3.2）
+将Node.js下载到本地，安装即可。下载地址：http://nodejs.cn/download/ （建议使用node v16版本）
 
 ### 1.2 源码获取
 

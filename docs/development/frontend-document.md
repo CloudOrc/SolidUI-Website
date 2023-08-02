@@ -12,7 +12,7 @@ sidebar_position: 4
 
 This step is only required for the first use, if you already have a node environment, you can skip it
 
-Download Node.js locally and install it. Download address: http://nodejs.cn/download/ (It is recommended to use node v16 version >= linkis-1.3.2)
+Download Node.js locally and install it. Download address: http://nodejs.cn/download/ (It is recommended to use node v16 version)
 
 ### 1.2 Source code acquisition
 
