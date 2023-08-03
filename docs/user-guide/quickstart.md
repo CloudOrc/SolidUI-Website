@@ -11,7 +11,7 @@ sidebar_position: 1
 [Docker](https://docs.docker.com/engine/install/) 1.13.1+
 [Docker Compose](https://docs.docker.com/compose/) 1.11.0+
 
-## 2. Start DolphinScheduler with docker-compose (recommended)
+## 2. Start docker-compose (recommended)
 
 This method needs to install docker-compose first, there are already a lot of information on the installation of docker-compose on the Internet, please install it yourself
 

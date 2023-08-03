@@ -9,7 +9,7 @@ sidebar_position: 1
 [Docker](https://docs.docker.com/engine/install/) 1.13.1+
 [Docker Compose](https://docs.docker.com/compose/) 1.11.0+
 
-## 2.以 docker-compose 的方式启动 DolphinScheduler (推荐)
+## 2.以 docker-compose 的方式启动 (推荐)
 
 这种方式需要先安装 docker-compose, docker-compose 的安装网上已经有非常多的资料，请自行安装即可
 
