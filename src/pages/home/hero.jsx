@@ -115,6 +115,9 @@ export default function () {
                 <a target="_blank" href="https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA">
                   <img src="https://img.shields.io/badge/join-us%20on%20slack-gray.svg?longCache=true&logo=slack&colorB=red" className="wow fadeInUp"/>
                 </a>
+                <a target="_blank" href="https://discord.gg/NDnNMSYv">
+                  <img src="https://img.shields.io/discord/1110556150199504958" className="wow fadeInUp"/>
+                </a>
               </div>
             </div>
           </div>
