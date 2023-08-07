@@ -29,8 +29,11 @@ cd solidui-x.x.x/solidui-web
 ```shell script
 # solidui 服务地址
 solidui_url="http://127.0.0.1:12345"
-
-#可以配置为安装机器的ip 也可以使用默认值
+# 模型后端服务地址
+solidui_url_models="http://127.0.0.1:5110"
+# 模型内核后端服务地址
+solidui_url_kernel="http://127.0.0.1:5010"
+# 可以配置为安装机器的ip 也可以使用默认值
 solidui_ipaddr=127.0.0.1
 # 访问管理台的端口
 solidui_port=8099
@@ -57,6 +60,36 @@ server {
 
   location /solidui {
     proxy_pass http://localhost:12345; # 后端 SolidUI 的地址
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header x_real_ipP $remote_addr;
+    proxy_set_header remote_addr $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_http_version 1.1;
+    proxy_connect_timeout 4s;
+    proxy_read_timeout 600s;
+    proxy_send_timeout 12s;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection upgrade;
+  }
+
+  location /solidui/models {
+    proxy_pass $solidui_url_models; #Solidui backend address
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header x_real_ipP $remote_addr;
+    proxy_set_header remote_addr $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_http_version 1.1;
+    proxy_connect_timeout 4s;
+    proxy_read_timeout 600s;
+    proxy_send_timeout 12s;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection upgrade;
+  }
+
+  location /solidui/kernel {
+    proxy_pass $solidui_url_kernel; #Solidui backend address
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
@@ -106,6 +139,36 @@ server {
 
   location /solidui {
     proxy_pass http://127.0.0.1:12345; # solidui 服务地址
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header x_real_ipP $remote_addr;
+    proxy_set_header remote_addr $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_http_version 1.1;
+    proxy_connect_timeout 4s;
+    proxy_read_timeout 600s;
+    proxy_send_timeout 12s;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection upgrade;
+  }
+
+  location /solidui {
+    proxy_pass http://127.0.0.1:12345; # solidui service address
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header x_real_ipP $remote_addr;
+    proxy_set_header remote_addr $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_http_version 1.1;
+    proxy_connect_timeout 4s;
+    proxy_read_timeout 600s;
+    proxy_send_timeout 12s;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection upgrade;
+  }
+
+  location /solidui/models {
+    proxy_pass http://127.0.0.1:5110; #Solidui backend address
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
