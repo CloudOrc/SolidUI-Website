@@ -57,7 +57,7 @@ mysql -h192.168.xx.xx -P3306 -uroot -p
 CREATE DATABASE solidui DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
 
-# 修改数据库连接信息，修改表solidui_model_type，token和baseurl字段 (0.2.0版本以后支持)
+# 修改数据库连接信息，修改表solidui_model_type，token和baseurl字段 (0.2.0版本支持)
 token为模型API token
 baseurl为模型API基础地址，例如：https://api.openai.com（这是国外openai地址），https://api.chatanywhere.com.cn（openai国内代理地址），http://ip:port（chatGLM地址）
 
