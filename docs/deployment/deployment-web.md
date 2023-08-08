@@ -207,7 +207,7 @@ If you need to modify the port or static resource directory, etc., please modify
 - Check whether nginx starts normally: check whether the nginx process exists `ps -ef |grep nginx`
 - Check if the configuration of nginx is correct `sudo nginx -T`
 - If the port is occupied, you can modify the service port `/etc/nginx/conf.d/solidui.conf`listen port value started by nginx, save and restart
-  :::
+:::
 
 ## 5 Frequently Asked Questions
 ### 5.1 Interface timeout
