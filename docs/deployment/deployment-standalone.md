@@ -56,6 +56,17 @@ mysql -h192.168.xx.xx -P3306 -uroot -p
 # create database
 CREATE DATABASE solidui DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
+# Modify the database connection information, modify the table solidui_model_type, token and baseurl fields
+token is the model API token
+baseurl is the base address of the model API, for example: https://api.openai.com (this is the address of openai abroad), https://api.chatanywhere.com.cn (the address of the domestic agent of openai)
+
+solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
+INSERT INTO `solidui_model_type` (`id`, `name`, `type_name`, `prompt`, `token`, `baseurl`)
+VALUES
+(1,'gpt-3.5-turbo','gpt',NULL,NULL,NULL),
+(2,'gpt-4','gpt',NULL,NULL,NULL),
+(3,'chatglm_lite','chatglm',NULL,NULL,NULL);
+
 # Execute the database initialization script
 
 source solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql

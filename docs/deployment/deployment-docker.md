@@ -34,7 +34,20 @@ docker-compose up -d
 
 ```
 
-### 2.3 Accessing Services
+### 2.3 Modify the database table information, modify the table solidui_model_type, token and baseurl fields
+
+token is the model API token
+baseurl is the base address of the model API, for example: https://api.openai.com (this is the address of openai abroad), https://api.chatanywhere.com.cn (the address of openai's domestic agent), http://ip: port (chatGLM address)
+
+```shell script
+# Enter the mysql created by Docker-Compose
+mysql -h ip -u root -p
+use solidui;
+update solidui_model_type set token = '' , baseurl='' where id = 'id';
+
+```
+
+### 2.4 Accessing Services
 
 Access link http://localhost:8099
 
