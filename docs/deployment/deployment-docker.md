@@ -34,7 +34,7 @@ docker-compose up -d
 
 ```
 
-### 2.3 Modify the database table information, modify the table solidui_model_type, token and baseurl fields
+### 2.3 Modify the database table information, modify the table solidui_model_type, token and baseurl fields (supported after version 0.2.0)
 
 token is the model API token
 baseurl is the base address of the model API, for example: https://api.openai.com (this is the address of openai abroad), https://api.chatanywhere.com.cn (the address of openai's domestic agent), http://ip: port (chatGLM address)

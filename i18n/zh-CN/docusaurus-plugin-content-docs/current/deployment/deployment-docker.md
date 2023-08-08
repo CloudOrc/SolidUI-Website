@@ -36,7 +36,7 @@ docker-compose up -d
 
 ```
 
-### 2.3 修改数据库表信息,修改表solidui_model_type，token和baseurl字段
+### 2.3 修改数据库表信息,修改表solidui_model_type，token和baseurl字段 (0.2.0版本以后支持)
 
 token为模型API token
 baseurl为模型API基础地址，例如：https://api.openai.com（这是国外openai地址），https://api.chatanywhere.com.cn（openai国内代理地址），http://ip:port（chatGLM地址）
