@@ -56,6 +56,20 @@ mysql -h192.168.xx.xx -P3306 -uroot -p
 # 创建数据库
 CREATE DATABASE solidui DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
+
+# 修改数据库连接信息，修改表solidui_model_type，token和baseurl字段 (0.2.0版本以后支持)
+token为模型API token
+baseurl为模型API基础地址，例如：https://api.openai.com（这是国外openai地址），https://api.chatanywhere.com.cn（openai国内代理地址），http://ip:port（chatGLM地址）
+
+solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
+INSERT INTO `solidui_model_type` (`id`, `name`, `type_name`, `prompt`, `token`, `baseurl`)
+VALUES
+(1,'gpt-3.5-turbo','gpt',NULL,NULL,NULL),
+(2,'gpt-4','gpt',NULL,NULL,NULL),
+(3,'chatglm_lite','chatglm',NULL,NULL,NULL);
+
+
+
 # 执行数据库初始化脚本
 
 source solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
