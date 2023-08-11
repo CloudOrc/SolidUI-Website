@@ -10,9 +10,9 @@ sidebar_position: 1
 
 快速体验
 
-从 [Standalone](/docs/user-guide/deployment/deployment-standalone) 开始
+从 [Standalone](/docs/deployment/deployment-standalone) 开始
 
-从 [Docker](/docs/user-guide/deployment/deployment-docker) 开始 
+从 [Docker](/docs/deployment/deployment-docker) 开始 
 
 从 [演示环境](http://www.solidui.top/) 开始
 

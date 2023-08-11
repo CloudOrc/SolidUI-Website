@@ -1,6 +1,6 @@
 ---
 id: 'deployment-docker'
-title: 'Docker-Compose deployment'
+title: 'Docker-Compose Deployment'
 sidebar_position: 2
 ---
 
