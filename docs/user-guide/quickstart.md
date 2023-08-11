@@ -10,9 +10,9 @@ sidebar_position: 1
 
 For quick experience
 
-Want to start with [Standalone](/docs/user-guide/deployment/deployment-standalone)
+Want to start with [Standalone](/docs/deployment/deployment-standalone)
 
-Want to start with [Docker](/docs/user-guide/deployment/deployment-docker)
+Want to start with [Docker](/docs/deployment/deployment-docker)
 
 Want to start with [DemoEnvironment](http://www.solidui.top/) 
 
