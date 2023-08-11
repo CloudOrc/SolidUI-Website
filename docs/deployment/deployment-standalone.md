@@ -1,6 +1,6 @@
 ---
 id: 'deployment-standalone'
-title: 'Deployed Separately'
+title: 'Deployed Standalone'
 sidebar_position: 3
 ---
 
