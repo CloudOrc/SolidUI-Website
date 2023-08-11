@@ -4,38 +4,18 @@ title: 'Quick start'
 sidebar_position: 1
 ---
 
-# SolidUI Docker-Compose deployment
+# Quick start
 
-## 1. Environment preparation
+## Start
 
-[Docker](https://docs.docker.com/engine/install/) 1.13.1+
-[Docker Compose](https://docs.docker.com/compose/) 1.11.0+
+For quick experience
 
-## 2. Start docker-compose (recommended)
+Want to start with [Standalone](deployment/deployment-standalone)
 
-This method needs to install docker-compose first, there are already a lot of information on the installation of docker-compose on the Internet, please install it yourself
+Want to start with [Docker](deployment/deployment-docker)
 
-### 2.1 Download deployment package or source code
+Want to start with [DemoEnvironment](http://www.solidui.top/) 
 
-Download at https://github.com/CloudOrc/SolidUI/releases
-
-Please download the source package solidui-x.x.x-bin.tar.gz
-
-
-### 2.2 Pull the image and start the service
-
-```shell script
-# Enter the server (take Centos7 as an example)
-tar -zxvf solidui-x.x.x-bin.tar.gz
-
-cd solidui-x.x.x-src/solidui-dist/docker/
-
-docker-compose up -d
-
-```
-
-### 2.3 Accessing Services
-
-Access link http://localhost:8099
+## Accessing Services
 
 Default username and password: admin/admin

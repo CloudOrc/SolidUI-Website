@@ -5,9 +5,9 @@ sidebar_position: 1
 ---
 
 
-## Modules
+# Modules
 
-### Log in
+## Log in
 
 | Test Scenario | Input | Expected Output |
 | --- | --- | --- |
@@ -16,7 +16,7 @@ sidebar_position: 1
 | Empty username and password | Empty username and password | Login fails with error message |
 
 
-### Data Source Management
+## Data Source Management
 
 
 | Test Scenario | Input | Expected Output |
@@ -33,7 +33,7 @@ sidebar_position: 1
 | Data Source Expired | Single Row Select Data Source Expired | Success |
 
 
-### Project Management
+## Project Management
 
 
 | Test Scenario | Input | Expected Output |
@@ -46,7 +46,7 @@ sidebar_position: 1
 | Add an item, the description is empty | Empty string | After adding successfully, you can see the new item information in the item list, but the description information is empty |
 | Edit item, name does not exist | Empty string | Editing fails with error message |
 
-### Design
+## Design
 
 
 | ID | Test Scenario | Input | Expected Output |
