@@ -59,7 +59,7 @@ server {
   }
 
   location /solidui {
-    proxy_pass http://localhost:12345; # 后端 SolidUI 的地址
+    proxy_pass $solidui_url; # 后端 SolidUI 的地址
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
@@ -74,7 +74,7 @@ server {
   }
 
   location /solidui/models {
-    proxy_pass $solidui_url_models; #Solidui backend address
+    proxy_pass $solidui_url_models; # modelui 后端地址
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
@@ -89,7 +89,7 @@ server {
   }
 
   location /solidui/kernel {
-    proxy_pass $solidui_url_kernel; #Solidui backend address
+    proxy_pass $solidui_url_kernel; # modelui kernel 后端地址
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
@@ -152,8 +152,8 @@ server {
     proxy_set_header Connection upgrade;
   }
 
-  location /solidui {
-    proxy_pass http://127.0.0.1:12345; # solidui service address
+  location /solidui/models {
+    proxy_pass http://127.0.0.1:5110; # modelui 后端地址
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
@@ -167,8 +167,8 @@ server {
     proxy_set_header Connection upgrade;
   }
 
-  location /solidui/models {
-    proxy_pass http://127.0.0.1:5110; #Solidui backend address
+  location /solidui/kernel {
+    proxy_pass http://127.0.0.1:5010; # modelui kernel 后端地址
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header x_real_ipP $remote_addr;
