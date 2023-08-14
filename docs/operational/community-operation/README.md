@@ -45,3 +45,7 @@ Actively communicate with co-building community members during the issue resolut
 Respect others, actively participate in community building, and maintain a positive community atmosphere.
 Abide by the community's code of conduct, abstaining from participating in or condoning any form of discrimination, harassment, or improper behavior.
 We hope that these terms provide clear guidance for community co-building, allowing everyone to jointly operate the community effectively. Thank you for your support and participation!
+
+## Chinese document writing standards
+
+[Ruan YiFeng document-style-guide](https://github.com/ruanyf/document-style-guide)
