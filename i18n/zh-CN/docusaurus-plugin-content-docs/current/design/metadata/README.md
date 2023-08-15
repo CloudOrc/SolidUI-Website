@@ -1,6 +1,6 @@
 ---
 id: 'metadata'
-title: 'Metadata'
+title: '元数据'
 sidebar_position: 3
 ---
 
