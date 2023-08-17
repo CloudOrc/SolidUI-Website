@@ -28,7 +28,7 @@ Please download the source package solidui-x.x.x-bin.tar.gz
 # Enter the server (take Centos7 as an example)
 tar -zxvf solidui-x.x.x-bin.tar.gz
 
-cd solidui-x.x.x-src/solidui-dist/docker/
+cd solidui-x.x.x-bin/docker/
 
 docker-compose up -d
 

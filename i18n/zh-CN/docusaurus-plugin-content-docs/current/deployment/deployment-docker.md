@@ -30,7 +30,7 @@ sidebar_position: 2
 # 进入服务器（以Centos7为例）
 tar -zxvf solidui-x.x.x-bin.tar.gz
 
-cd solidui-x.x.x-src/solidui-dist/docker/
+cd solidui-x.x.x-bin/docker
 
 docker-compose up -d
 
