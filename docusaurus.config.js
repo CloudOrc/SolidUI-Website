@@ -23,8 +23,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'SolidUI',
   tagline: 'AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.',
-  url: 'https://website.solidui.top/',
-  baseUrl: '/',
+  url: 'https://cloudorc.github.io',
+  baseUrl: '/SolidUI-Website/',
 
     // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

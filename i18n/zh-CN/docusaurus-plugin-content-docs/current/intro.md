@@ -55,7 +55,7 @@ SolidUI 使用 RLHF (Reinforcement Learning Human Feedback) 流程来优化文�
 
 # 文档
 
-SolidUI v0.1.0 的完整文档列表，请参见 [SolidUI-Website](https://website.solidui.top/zh-CN/)
+SolidUI v0.1.0 的完整文档列表，请参见 [SolidUI-Website](https://cloudorc.github.io/SolidUI-Website/zh-CN/)
 
 # 贡献
 
@@ -67,14 +67,8 @@ SolidUI v0.1.0 的完整文档列表，请参见 [SolidUI-Website](https://websi
 - [twitter](https://twitter.com/dlimeng192048)
 - [youtube](https://www.youtube.com/@dlimeng)
 - [bilibili](https://space.bilibili.com/472576729) (in Chinese)
-- [slack](https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA)
-- 可以扫描下面的二维码，加入我们的微信群，以获得更快速的响应 (in Chinese)
+- [discord](https://discord.gg/brKfUUXg)
 
-![SolidUI1](/image/join_wechat.png)
-
-- 微信公众号 (in Chinese)
-
-![SolidUI2](/image/wx_qr.png)
 
 # 谁在使用 SolidUI
 

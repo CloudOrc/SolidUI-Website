@@ -24,7 +24,7 @@ sidebar_position: 3
 
 ### 1.4 文档改进
 
-SolidUI 文档位于[SolidUI-Website](https://website.solidui.top/zh-CN/) ，文档的补充完善对于 SolidUI 的发展也至关重要。
+SolidUI 文档位于[SolidUI-Website](https://cloudorc.github.io/SolidUI-Website/zh-CN/) ，文档的补充完善对于 SolidUI 的发展也至关重要。
 
 ### 1.5 其他
 
