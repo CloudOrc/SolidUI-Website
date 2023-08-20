@@ -87,7 +87,7 @@ export default function () {
                   target="_blank">
                   <i className="lni-github-original"></i>&nbsp;GitHub
                 </a>
-                <a className="btn streampark-btn btn-green mt-30 ml-3 ztop" href="/docs/user-guide/quick-start"
+                <a className="btn streampark-btn btn-green mt-30 ml-3 ztop" href="/SolidUI-Website/docs/user-guide/quick-start"
                   style={{ marginLeft: '10px' }}>
                   <i className="lni-play"></i>&nbsp;Get started
                 </a>
