@@ -4,7 +4,7 @@
 
 [English](README.md) | [中文](README_ZH.md)
 
-这是包含 `https://website.solidui.top/` 的所有源代码的存储库。
+这是包含 `https://cloudorc.github.io/SolidUI-Website/` 的所有源代码的存储库。
 本指南将指导您如何为 SolidUI 的网站做出贡献。
 
 ## 分支
@@ -94,7 +94,7 @@ dev  默认分支
 
 ### 3.5 首页页面修改
 
-访问页面：[https://website.solidui.top/](https://website.solidui.top/)
+访问页面：[https://cloudorc.github.io/SolidUI-Website/](https://cloudorc.github.io/SolidUI-Website/)
 
 位于 `src/pages/home`：
 
@@ -106,7 +106,7 @@ dev  默认分支
 
 ### 3.6 团队页面修改
 
-访问页面：[https://website.solidui.top/zh-CN/team](https://website.solidui.top/zh-CN/team)
+访问页面：[https://cloudorc.github.io/SolidUI-Website/zh-CN/team](https://cloudorc.github.io/SolidUI-Website/zh-CN/team)
 
 位于 `src/pages/team`：
 

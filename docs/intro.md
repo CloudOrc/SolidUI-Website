@@ -56,7 +56,7 @@ Through this process, SolidUI's Vincent graph language model is able to continuo
 
 # Document
 
-For a complete list of documentation for SolidUI v0.1.0, see [SolidUI-Website](https://website.solidui.top/)
+For a complete list of documentation for SolidUI v0.1.0, see [SolidUI-Website](https://cloudorc.github.io/SolidUI-Website/)
 
 # Contribute
 
@@ -68,14 +68,7 @@ We welcome and look forward to more contributors participating in building Solid
 - [twitter](https://twitter.com/dlimeng192048)
 - [youtube](https://www.youtube.com/@dlimeng)
 - [bilibili](https://space.bilibili.com/472576729) (in Chinese)
-- [slack](https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA)
-- You can scan the QR code below and join our WeChat group for faster response (in Chinese)
-
-![SolidUI1](/image/join_wechat.png)
-
-- WeChat Official Account (in Chinese)
-
-![SolidUI2](/image/wx_qr.png)
+- [discord](https://discord.gg/brKfUUXg)
 
 # Who is using SolidUI
 

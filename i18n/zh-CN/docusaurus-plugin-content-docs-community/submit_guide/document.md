@@ -109,7 +109,7 @@ css and other style files are placed in the `src/css` directory
 
 ### Home page modification
 
-Visit the page https://website.solidui.top/
+Visit the page https://cloudorc.github.io/SolidUI-Website/
 Located in `src/pages/home`
 
 ```
@@ -120,7 +120,7 @@ Located in `src/pages/home`
 
 ### Team page modification
 
-Visit the page https://website.solidui.top/team
+Visit the page https://cloudorc.github.io/SolidUI-Website/team
 Located in `src/pages/team`
 
 ```

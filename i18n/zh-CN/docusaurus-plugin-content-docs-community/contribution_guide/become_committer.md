@@ -25,7 +25,7 @@ Helping to answer usage questions in Issues is a very valuable way to contribute
 
 ### 1.4 Documentation improvements
 
-The SolidUI documentation is located at [SolidUI-Website](https://website.solidui.top/), and the completion of the documentation is also crucial to the development of SolidUI.
+The SolidUI documentation is located at [SolidUI-Website](https://cloudorc.github.io/SolidUI-Website/), and the completion of the documentation is also crucial to the development of SolidUI.
 
 ### 1.5 Others
 

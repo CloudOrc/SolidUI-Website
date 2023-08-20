@@ -3,7 +3,7 @@
 
 [English](README.md) | [中文](README_ZH.md)
 
-This is the repository containing all the source code of `https://website.solidui.top/`.
+This is the repository containing all the source code of `https://cloudorc.github.io/SolidUI-Website/`.
 This guide will guide you how to contribute to the SolidUI website.
 
 
@@ -92,7 +92,7 @@ css and other style files are placed in the `src/css` directory
 > Except for the homepage, team, user, Docs>All Version module page, all other pages can be directly jumped to the corresponding github resource modification page through the'Edit this page' button at the bottom
 
 ### 3.5 Home page modification
-Visit the page [https://website.solidui.top/](https://website.solidui.top/)
+Visit the page [https://cloudorc.github.io/SolidUI-Website/](https://cloudorc.github.io/SolidUI-Website/)
 Located in `src/pages/home`
 
 ```
@@ -101,7 +101,7 @@ Located in `src/pages/home`
 │ index.less     // homepage style
 ```
 ### 3.6 Team page modification
-Visit the page [https://website.solidui.top/zh-CN/team](https://website.solidui.top/zh-CN/team)
+Visit the page [https://cloudorc.github.io/SolidUI-Website/zh-CN/team](https://cloudorc.github.io/SolidUI-Website/zh-CN/team)
 Located in `src/pages/team`
 ```
 ├─team
