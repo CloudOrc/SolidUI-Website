@@ -9,6 +9,7 @@ import Wave from "../../../static/home/wave.svg"
 export default function () {
   const isBrowser = useIsBrowser();
   const language = isBrowser && location.pathname.indexOf('/zh-CN/') === 0 ? 'zh-CN' : 'en'
+  const languagePath = isBrowser && location.pathname.indexOf('/zh-CN/') === 0 ? '/zh-CN' : ''
   const dataSource = config?.[language];
 
   return (
@@ -87,7 +88,7 @@ export default function () {
                   target="_blank">
                   <i className="lni-github-original"></i>&nbsp;GitHub
                 </a>
-                <a className="btn streampark-btn btn-green mt-30 ml-3 ztop" href="/SolidUI-Website/docs/user-guide/quick-start"
+                <a className="btn streampark-btn btn-green mt-30 ml-3 ztop" href={`/SolidUI-Website${languagePath}/docs/user-guide/quick-start`}
                   style={{ marginLeft: '10px' }}>
                   <i className="lni-play"></i>&nbsp;Get started
                 </a>
@@ -115,7 +116,7 @@ export default function () {
                 <a target="_blank" href="https://join.slack.com/t/solidui/shared_invite/zt-1r83iino0-SZD38aHAIw2KBA~DSpZndA">
                   <img src="https://img.shields.io/badge/join-us%20on%20slack-gray.svg?longCache=true&logo=slack&colorB=red" className="wow fadeInUp"/>
                 </a>
-                <a target="_blank" href="https://discord.gg/brKfUUXg">
+                <a target="_blank" href="https://discord.gg/NGRNu2mGeQ">
                   <img src="https://img.shields.io/discord/1110556150199504958" className="wow fadeInUp"/>
                 </a>
               </div>
