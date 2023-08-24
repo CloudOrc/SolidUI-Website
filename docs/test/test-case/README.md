@@ -69,3 +69,10 @@ sidebar_position: 1
 |16| Edit SQL query statement| Scenario: "Test Scenario 1", Page: "Test Page 1", Legend: "Column Chart 1", New SQL: "SELECT category, value * 2 AS double_value FROM sample_data"| SQL The query statement is modified successfully, and column chart 1 shows the data returned by the new SQL query|
 |17| Undo Legend Editing| Scene: "Test Scene 1", Page: "Test Page 1", Legend: "Column Chart 1" | Undo is successful, and the legend returns to the state before editing|
 
+## ModelUI
+
+| ID   | Test Scenario       | Input                                                        | Expected Output                                              |
+| ---- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | Open test page      | Scene: "test scene 1", Page: "test page 1"                   | Display the test page                                        |
+| 2    | Open ModelUI slider | Scene: "test scene 1", Page: "test page 1", select a model from the dropdown box | Display the ModelUI window on the right side of the page, showing the selected model |
+| 3    | Draw a 2D graph     | In the ModelUI session panel, input the equation "3x^2 + 4x - 5 = 0" to draw the graph | Draw the graph of the equation "3x^2 + 4x - 5 = 0" on the coordinate plane |
