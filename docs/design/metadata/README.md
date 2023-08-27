@@ -100,6 +100,7 @@ sidebar_position: 3
 
 - id: Unique identifier of the model type.
 - name: Name.
+- code: output code type
 - type_name: Type name.
 - prompt: Prompt.
 - token: Token.

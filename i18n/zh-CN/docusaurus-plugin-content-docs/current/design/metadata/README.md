@@ -103,6 +103,7 @@ sidebar_position: 3
 
 * id: 模型类型的唯一标识符。
 * name: 名称。
+* code: 输出代码类型。
 * type_name: 类型名称。
 * prompt: 提示。
 * token: 令牌。
