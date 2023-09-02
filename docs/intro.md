@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Introduce
 
-AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.
+AI-generated Graphic Models.
 
 ## Core Features
 
@@ -68,7 +68,7 @@ We welcome and look forward to more contributors participating in building Solid
 - [twitter](https://twitter.com/dlimeng192048)
 - [youtube](https://www.youtube.com/@dlimeng)
 - [bilibili](https://space.bilibili.com/472576729) (in Chinese)
-- [discord](https://discord.gg/brKfUUXg)
+- [discord](https://discord.gg/NGRNu2mGeQ)
 
 # Who is using SolidUI
 

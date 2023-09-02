@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # 介绍
 
-AI生成可视化原型设计和编辑平台，支持2D，3D模型，结合LLM(Large Language Model) 快速编辑。
+AI生成图形模型。
 
 ## 核心特点
 
@@ -67,7 +67,7 @@ SolidUI v0.1.0 的完整文档列表，请参见 [SolidUI-Website](https://cloud
 - [twitter](https://twitter.com/dlimeng192048)
 - [youtube](https://www.youtube.com/@dlimeng)
 - [bilibili](https://space.bilibili.com/472576729) (in Chinese)
-- [discord](https://discord.gg/brKfUUXg)
+- [discord](https://discord.gg/NGRNu2mGeQ)
 
 
 # 谁在使用 SolidUI

@@ -17,8 +17,8 @@
       "changeLog": "详细变更"
     },
     "slogan": {
-      "key": "AI生成可视化",
-      "description": "AI生成可视化原型设计和编辑平台，支持2D，3D模型，结合LLM(Large Language Model) 快速编辑。"
+      "key": "AI生成图形模型",
+      "description": "一句话生成任何图形"
     },
     "feature": [
       {
@@ -75,8 +75,8 @@
       "changeLog": "Changelog"
     },
     "slogan": {
-      "key": "AI-generated visualization platform",
-      "description":  "AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing."
+      "key": "AI-generated Graphic Models",
+      "description":  "one sentence generates any graph"
     },
     "feature": [
       {
