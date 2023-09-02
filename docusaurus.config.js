@@ -22,7 +22,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SolidUI',
-  tagline: 'AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.',
+  tagline: 'AI-generated Graphic Models.',
   url: 'https://cloudorc.github.io',
   baseUrl: '/SolidUI-Website/',
 
@@ -302,7 +302,7 @@ const config = {
                     
                     <div>
                       <p style="font-family: Avenir-Medium;font-size: 14px;color: #999;line-height: 25px;">
-                      AI-generated visualization prototyping and editing platform, support 2D, 3D models, combined with LLM(Large Language Model) for quick editing.
+                      AI-generated Graphic Models.
                       </p>
                   </div>
                 </div>
