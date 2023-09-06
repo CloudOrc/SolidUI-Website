@@ -23,11 +23,7 @@ AI生成图形模型。
 
 # 快速开始
 
-为了快速体验
-
-从 [Standalone](deployment/deployment-standalone.md) 开始
-
-从 [Docker](deployment/deployment-docker.md) 开始
+[quick-start](/docs/user-guide/quick-start/)
 
 # 这是什么？
 
