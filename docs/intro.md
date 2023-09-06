@@ -24,11 +24,7 @@ AI-generated Graphic Models.
 
 # QuickStart
 
-For quick experience
-
-Want to start with [Standalone](deployment/deployment-standalone.md)
-
-Want to start with [Docker](deployment/deployment-docker.md)
+[quick-start](/docs/user-guide/quick-start/)
 
 # What's this?
 
