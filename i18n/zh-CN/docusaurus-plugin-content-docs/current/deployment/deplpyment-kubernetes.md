@@ -8,7 +8,14 @@ sidebar_position: 3
 
 ## 1. 环境准备
 
+### 软件环境  
 [Docker](https://docs.docker.com/engine/install/) 1.13.1+ [Kubernetes](https://kubernetes.io/) 1.19.0+ [Helm](https://helm.sh/) 3.4.x+ [ingress](https://kubernetes.github.io/ingress-nginx/) 1.3.0+
+
+### 操作系统
+Centos 7+, Ubuntu 20.04
+
+### 硬件环境
+CPU 8核+，内存 16G+  
 
 ## 2.以 Helm 的方式启动 (推荐)
 
