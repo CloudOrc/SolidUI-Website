@@ -35,8 +35,18 @@ cd SolidUI/deploy/kubernetes/helm-solidui
 helm install solidui ./
 ```
 
-### 2.3 访问服务
+### 2.3 查看服务状态及ingress端口
+```
+//查看pod状态
+kubectl get pods -n solidui
+//查看ingress端口
+kubectl get svc -A |grep ingress-nginx-controller
+//如果不使用ingress访问可通过port-forward转发端口进行访问
+kubectl port-forward svc/solidui-web  80:8099 --address 0.0.0.0 -n solidui
+```
 
-访问链接 http://ingress-ip-address:8099
+### 2.4 访问服务
+
+访问链接 http://ingress-ip-address:ingress-port
 
 默认用户名密码：admin/admin
