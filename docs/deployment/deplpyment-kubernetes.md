@@ -36,8 +36,18 @@ cd SolidUI/deploy/kubernetes/helm-solidui
 helm install solidui ./
 ```
 
-### 2.3 Accessing Services
+### 2.3 View the service status and ingress port
+```
+//View pod status
+kubectl get pods -n solidui
+//View the ingress port
+kubectl get svc -A |grep ingress-nginx-controller
+//If you do not use ingress access, you can access it through the port-forward forwarding port
+kubectl port-forward svc/solidui-web  80:8099 --address 0.0.0.0 -n solidui
+```
 
-Access link http://ingress-ip-address:8099
+### 2.4 Accessing Services
+
+Access link http://ingress-ip-address:ingress-port
 
 Default username and password: admin/admin
