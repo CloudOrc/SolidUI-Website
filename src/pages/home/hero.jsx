@@ -96,7 +96,7 @@ export default function () {
            
               <div style={{ marginTop: '20px' }}  className="shields ztop d-flex justify-content-center align-items-start">
                 <a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0.html">
-                  <img src="https://img.shields.io/badge/license-Apache%202-4EB1BA.svg" className="wow fadeInUp"></img>
+                  <img src="https://img.shields.io/badge/license-Apache%202-blue.svg" className="wow fadeInUp"></img>
                 </a>
                 <a target="_blank" href="https://github.com/CloudOrc/SolidUI">
                   <img src="https://img.shields.io/github/stars/CloudOrc/SolidUI.svg?sanitize=true" className="wow fadeInUp"></img>
@@ -108,13 +108,16 @@ export default function () {
                   <img src="https://img.shields.io/github/languages/count/CloudOrc/SolidUI" className="wow fadeInUp"></img>
                 </a>
                 <a target="_blank" href="https://huggingface.co/spaces/CloudOrc/SolidUI">
-                  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Spaces-blue" className="wow fadeInUp" />
+                  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20-Hugging%20Face%20Spaces-blue" className="wow fadeInUp" />
                 </a>
                 <a href="https://www.producthunt.com/posts/solidui?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-solidui" target="_blank">
-                  <img src="https://img.shields.io/badge/producthunt-orange"  className="wow fadeInUp" />
+                  <img src="https://img.shields.io/badge/producthunt-blue"  className="wow fadeInUp" />
                 </a>
                 <a target="_blank" href="https://discord.gg/NGRNu2mGeQ">
-                  <img src="https://img.shields.io/discord/1110556150199504958" className="wow fadeInUp"/>
+                  <img src="https://img.shields.io/badge/discord-blue" className="wow fadeInUp"/>
+                </a>
+                <a target="_blank" href='https://gitee.com/CloudOrc/SolidUI'>
+                  <img src="https://shields.io/badge/%E2%AD%90-Gitee-blue" alt="gitee" className="wow fadeInUp" />
                 </a>
               </div>
             </div>
