@@ -23,7 +23,7 @@ cd solidui-x.x.x-bin/entrance-server
 
 # changing the JDBC MySQL IP under the same network
 vi solidui-x.x.x-bin/entrance-server/conf/application.yaml
-jdbc:mysql://mysql:3306/solidui?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+jdbc:mysql://mysql:3306/solidui?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
 
 # Building image
 docker build  -f ./docker/Dockerfile  -t  solidui-entrance:x.x.x . 
