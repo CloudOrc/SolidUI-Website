@@ -20,6 +20,12 @@ sidebar_position: 2
 ```shell script
 tar -zxvf solidui-x.x.x-bin.tar.gz
 cd solidui-x.x.x-bin/entrance-server
+
+# 同一个网络下修改jdbc mysql ip
+vi solidui-x.x.x-bin/entrance-server/conf/application.yaml
+jdbc:mysql://mysql:3306/solidui?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+
+# Building image
 docker build  -f ./docker/Dockerfile  -t  solidui-entrance:x.x.x .
 
 ```
@@ -30,6 +36,7 @@ tar -zxvf solidui-x.x.x-bin.tar.gz
 cd solidui-x.x.x-bin
 # 修改.env配置文件
 vi soliduimodelui/.env
+DB_HOST=mysql
 SNAKEMQ_LISTENER=0.0.0.0
 SNAKEMQ_CONNECTOR=soliduimodelui
 
