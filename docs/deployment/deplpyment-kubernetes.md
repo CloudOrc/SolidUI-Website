@@ -24,14 +24,18 @@ In this way, you need to install the Helm first. There are a lot of information 
 
 ### 2.1 Download source code
 
-Download the source code of https://github.com/CloudOrc/SolidUI for items in the github.
+* Method 1: Download the address from the official website: https://github.com/CloudOrc/SolidUI/releases, and download the corresponding installation package (overall installation package).
+* Method 2: Compile the project installation package according to SolidUI.
+
+Please download the source package solidui-x.x.x-src.tar.gz
+
 
 ### 2.2 Start the service with Helm
 
 ```
 # Enter the server (take Centos7 as an example)
 
-cd SolidUI/deploy/kubernetes/helm-solidui
+cd solidui-x.x.x-src/deploy/kubernetes/helm-solidui
 
 helm install solidui ./
 ```

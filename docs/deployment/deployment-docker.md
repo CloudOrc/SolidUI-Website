@@ -17,18 +17,19 @@ This method needs to install docker-compose first, there are already a lot of in
 
 ### 2.1 Download deployment package or source code
 
-Download at https://github.com/CloudOrc/SolidUI/releases
+* Method 1: Download the address from the official website: https://github.com/CloudOrc/SolidUI/releases, and download the corresponding installation package (overall installation package).
+* Method 2: Compile the project installation package according to SolidUI.
 
-Please download the source package solidui-x.x.x-bin.tar.gz
+Please download the source package solidui-x.x.x-src.tar.gz
 
 
 ### 2.2 Pull the image and start the service
 
 ```shell script
 # Enter the server (take Centos7 as an example)
-tar -zxvf solidui-x.x.x-bin.tar.gz
+tar -zxvf solidui-x.x.x-src.tar.gz
 
-cd solidui-x.x.x-bin/docker/
+cd solidui-x.x.x-src/deploy/docker/
 
 docker-compose up -d
 
@@ -52,4 +53,4 @@ update solidui_model_type set token = '' , baseurl='' where id = 'id';
 
 Access link http://localhost:8099
 
-Default username and password: admin/adm
+Default username and password: admin/admin
