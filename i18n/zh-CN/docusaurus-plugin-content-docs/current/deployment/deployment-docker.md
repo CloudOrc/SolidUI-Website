@@ -21,16 +21,16 @@ sidebar_position: 2
 
 方式2：从https://github.com/CloudOrc/SolidUI/releases 下载下载所需版本的源码包。
 
-请下载源码包 solidui-x.x.x-bin.tar.gz
+请下载源码包 solidui-x.x.x-src.tar.gz
 
 
 ### 2.2 拉取镜像并启动服务
 
 ```shell script
 # 进入服务器（以Centos7为例）
-tar -zxvf solidui-x.x.x-bin.tar.gz
+tar -zxvf solidui-x.x.x-src.tar.gz
 
-cd solidui-x.x.x-bin/docker
+cd solidui-x.x.x-src/deploy/docker
 
 docker-compose up -d
 

@@ -23,14 +23,19 @@ CPU 8核+，内存 16G+
 
 ### 2.1 下载源码
 
-从github仓库 https://github.com/CloudOrc/SolidUI 获取项目的源代码。
+方式1：从github仓库 https://github.com/CloudOrc/SolidUI 获取项目的源代码。
+
+方式2：从https://github.com/CloudOrc/SolidUI/releases 下载下载所需版本的源码包。
+
+请下载源码包 solidui-x.x.x-src.tar.gz
+
 
 ### 2.2 拉取镜像并启动服务
 
 ```
 # 进入服务器（以Centos7为例）
 
-cd SolidUI/deploy/kubernetes/helm-solidui
+cd solidui-x.x.x-src/deploy/kubernetes/helm-solidui
 
 helm install solidui ./
 ```
