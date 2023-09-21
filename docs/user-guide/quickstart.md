@@ -14,6 +14,8 @@ Want to start with [Standalone](/docs/deployment/deployment-standalone)
 
 Want to start with [Docker](/docs/deployment/deployment-docker)
 
+Want to start with [Kubernetes](/docs/deployment/deplpyment-kubernetes)
+
 Want to start with [DemoEnvironment](http://www.solidui.top/) 
 
 ## Accessing Services
