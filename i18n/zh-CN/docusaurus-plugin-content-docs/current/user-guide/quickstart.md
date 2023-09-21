@@ -14,7 +14,7 @@ sidebar_position: 1
 
 从 [Docker](/docs/deployment/deployment-docker) 开始 
 
-从 [Kubernetes](/docs/deployment/deplpyment-kubernetes) 开始
+从 [Kubernetes](/docs/deployment/deployment-kubernetes) 开始
 
 从 [演示环境](http://www.solidui.top/) 开始
 
