@@ -4,7 +4,6 @@ import useIsBrowser from '@docusaurus/useIsBrowser'
 import config from './languages.json'
 import RocketIcon from "../../../static/home/rocket.svg"
 import BlockIcon from "../../../static/home/block.svg"
-import StartUp from "../../../static/home/dashboard.svg"
 import Wave from "../../../static/home/wave.svg"
 export default function () {
   const isBrowser = useIsBrowser();
