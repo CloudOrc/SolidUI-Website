@@ -4,75 +4,78 @@ title: 'Deployed Standalone'
 sidebar_position: 3
 ---
 
-# SolidUI is deployed separately
+# SolidUI Standalone Deployment
 
-## 1. First-time installation preparations
-### 1.1 Linux server
+## 1. Preparations for Initial Installation
+### 1.1 Linux Server
 
 #### Hardware Requirements
-Install one SolidUI microservice with at least 512M memory. The default jvm -Xmx memory size of each microservice is 512M (if the memory is not enough, you can try to reduce it to 256/128M, and you can also increase it if the memory is enough).
+To install one SolidUI microservice, at least 512M of memory is required. Each microservice is configured by default to start with a JVM -Xmx memory size of 512M (if memory is insufficient, you can try to reduce this to 256/128M; if memory is sufficient, you can increase it).
 
-### 1.2 JDK preparation
+### 1.2 Preparation of JDK
 
-Java version requirements: jdk1.8.0_201 or above
+Java version requirement: JDK 1.8.0_201 or above
 
-### 1.3 Database preparation
+### 1.3 Python
 
-Mysql5.7 or above
+Python version requirement: Python 3.8 or above
+
+### 1.4 Database Preparation
+
+MySQL 5.7 or above
 
 
-## 2. Configuration modification
-### 2.1 Installation package preparation
+## 2. Configuration Changes
+### 2.1 Preparation of Installation Package
 
-* Method 1: Download the address from the official website: https://github.com/CloudOrc/SolidUI/releases, and download the corresponding installation package (overall installation package).
-* Method 2: Compile the project installation package by yourself according to the SolidUI back-end compilation and front-end compilation.
+Download the source code from https://github.com/CloudOrc/SolidUI or https://github.com/CloudOrc/SolidUI/releases, and compile the corresponding installation package.
 
 After uploading the installation package solidui-x.x.x-bin.tar.gz, decompress the installation package
+
 ```shell script
  tar -zxvf solidui-x.x.x-bin.tar.gz
 ```
 
 The directory structure after decompression is as follows:
 ```shell script
-drwxr-xr-x 2 root root 4096 Jun 10 20:31 docker
-drwxr-xr-x 6 root root 4096 Jun 11 17:57 entrance-server
--rw-r--r-- 1 root root 27711 Jun 4 21:47 LICENSE
-drwxr-xr-x 3 root root 4096 Jun 11 18:03 licenses
--rw-r--r-- 1 root root 24875 Jun 4 19:29 NOTICE
-drwxr-xr-x 4 root root 4096 Jun 11 18:26 solidui-web
+drwxr-xr-x 6 root root  4096 Jun 11 17:57 entrance-server
+-rw-r--r-- 1 root root 27711 Jun  4 21:47 LICENSE
+drwxr-xr-x 3 root root  4096 Jun 11 18:03 licenses
+-rw-r--r-- 1 root root 24875 Jun  4 19:29 NOTICE
+drwxr-xr-x 7 root root  4096 Sep 13 19:55 soliduimodelui
+drwxr-xr-x 4 root root  4096 Jun 11 18:26 solidui-web
 ```
 
-## 3. The server follows and starts
+## 3. Server Installation and Launch
 
-### 3.1 Preparations
+### 3.1 Preparation
 
 ```shell script
-# Initialize database ddl and dml paths
+# Initialize database DDL and DML path
 solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
 
-# Enter the mysql database
+# Enter MySQL database
 mysql -h192.168.xx.xx -P3306 -uroot -p
 
-# create database
+# Create database
 CREATE DATABASE solidui DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
 
-# Modify the database connection information, modify the table solidui_model_type, token and baseurl fields (supported after version 0.2.0)
-token is the model API token
-baseurl is the base address of the model API, for example: https://api.openai.com (this is the address of openai abroad), https://api.chatanywhere.com.cn (the address of the domestic agent of openai)
+
+# Modify database connection information, modify solidui_model_type table, token and baseurl fields (supported in version 0.2.0)
+Token is the model API token
+Baseurl is the model API base address, for example: https://api.openai.com (this is the foreign openai address), https://api.chatanywhere.com.cn (openai domestic proxy address), http://ip:port (chatGLM address)
 
 solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
-INSERT INTO `solidui_model_type` (`id`, `name`, `type_name`, `prompt`, `token`, `baseurl`)
-VALUES
-(1,'gpt-3.5-turbo','gpt',NULL,NULL,NULL),
-(2,'gpt-4','gpt',NULL,NULL,NULL),
-(3,'chatglm_lite','chatglm',NULL,NULL,NULL);
+
+# Modify `token` and `baseurl` fields in the `solidui_model_type` table
 
 # Execute the database initialization script
 
 source solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
 
 ```
-### 3.2 Configuration modification
+
+### 3.2 Configuration Changes
 
 ```shell script
 cd solidui-x.x.x-bin/entrance-server/conf
@@ -83,7 +86,7 @@ url: jdbc:mysql://localhost:3306/solidui?useSSL=false&useUnicode=true&characterE
 username: root
 password: root
 
-# 0.2.0 version adds python service configuration
+# Version 0.2.0 adds python service configuration
 vi solidui-x.x.x-bin/soliduimodelui/.env
 # Modify database connection information
 DB_HOST=localhost
@@ -94,33 +97,32 @@ DB_PASS=SolidUI@123
 
 ```
 
-### 3.3 Server start
+### 3.3 Server Launch
 
 ```shell script
 cd solidui-x.x.x-bin/entrance-server
-# start the service
+# Start service
 sh bin/start.sh
-# Out of service
+# Stop service
 sh bin/stop.sh
 
-# 0.2.0 version adds python service
+# Version 0.2.0 adds python service
 cd solidui-x.x.x-bin
 pip install -e .
 modelui
 ```
 
-## 4. Front-end deployment
+## 4. Frontend Deployment
 
-### 4.1 Preparations
+### 4.1 Preparation Work
 
 Refer to [Frontend Deployment](deployment-web.md)
 
-### 4.2 Startup
+### 4.2 Launch
 
-Visit the default link http://localhost:8099
+Access the default link http://localhost:8099
 
 Default username and password: admin/admin
-
 
 
 

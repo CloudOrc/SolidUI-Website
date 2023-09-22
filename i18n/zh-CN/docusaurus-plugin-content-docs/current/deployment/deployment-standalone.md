@@ -16,7 +16,11 @@ sidebar_position: 3
 
 java版本要求：jdk1.8.0_201 或以上版本
 
-### 1.3 数据库准备
+### 1.3 Python
+
+Python版本要求：python3.8 或以上版本
+
+### 1.4 数据库准备
 
 Mysql5.7 或以上版本
 
@@ -24,21 +28,21 @@ Mysql5.7 或以上版本
 ## 2.配置修改
 ### 2.1 安装包准备
 
-* 方式1：从官网下载地址: https://github.com/CloudOrc/SolidUI/releases ，下载对应的安装包（整体安装包）。
-* 方式2：根据SolidUI 后端编译和前端编译自行编译出项目安装包。
+https://github.com/CloudOrc/SolidUI 或者 https://github.com/CloudOrc/SolidUI/releases 下载源码，编译对应的安装包。
 
 上传安装包solidui-x.x.x-bin.tar.gz后，进行解压安装包
+
 ```shell script
  tar -zxvf solidui-x.x.x-bin.tar.gz
 ```
 
 解压后的目录结构如下：
 ```shell script
-drwxr-xr-x 2 root root  4096 Jun 10 20:31 docker
 drwxr-xr-x 6 root root  4096 Jun 11 17:57 entrance-server
 -rw-r--r-- 1 root root 27711 Jun  4 21:47 LICENSE
 drwxr-xr-x 3 root root  4096 Jun 11 18:03 licenses
 -rw-r--r-- 1 root root 24875 Jun  4 19:29 NOTICE
+drwxr-xr-x 7 root root  4096 Sep 13 19:55 soliduimodelui
 drwxr-xr-x 4 root root  4096 Jun 11 18:26 solidui-web
 ```
 
@@ -62,13 +66,8 @@ token为模型API token
 baseurl为模型API基础地址，例如：https://api.openai.com（这是国外openai地址），https://api.chatanywhere.com.cn（openai国内代理地址），http://ip:port（chatGLM地址）
 
 solidui-x.x.x-bin/entrance-server/conf/sql/mysql/solidui_mysql.sql
-INSERT INTO `solidui_model_type` (`id`, `name`, `type_name`, `prompt`, `token`, `baseurl`)
-VALUES
-(1,'gpt-3.5-turbo','gpt',NULL,NULL,NULL),
-(2,'gpt-4','gpt',NULL,NULL,NULL),
-(3,'chatglm_lite','chatglm',NULL,NULL,NULL);
 
-
+# 修改`solidui_model_type` 表 `token`和`baseurl`字段
 
 # 执行数据库初始化脚本
 
