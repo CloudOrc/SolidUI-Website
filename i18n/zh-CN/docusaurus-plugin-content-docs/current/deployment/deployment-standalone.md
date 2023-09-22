@@ -30,6 +30,8 @@ Mysql5.7 或以上版本
 
 https://github.com/CloudOrc/SolidUI 或者 https://github.com/CloudOrc/SolidUI/releases 下载源码，编译对应的安装包。
 
+编译：[服务端编译](/docs/development/development-server) 和 [前端编译](/docs/development/development-front)
+
 上传安装包solidui-x.x.x-bin.tar.gz后，进行解压安装包
 
 ```shell script

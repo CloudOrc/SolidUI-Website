@@ -28,9 +28,11 @@ MySQL 5.7 or above
 ## 2. Configuration Changes
 ### 2.1 Preparation of Installation Package
 
-Download the source code from https://github.com/CloudOrc/SolidUI or https://github.com/CloudOrc/SolidUI/releases, and compile the corresponding installation package.
+Download the source code from https://github.com/CloudOrc/SolidUI or https://github.com/CloudOrc/SolidUI/releases and compile the corresponding installation package.
 
-After uploading the installation package solidui-x.x.x-bin.tar.gz, decompress the installation package
+Compilation: [Server Compilation](/docs/development/development-server) and [Frontend Compilation](/docs/development/development-front)
+
+After uploading the installation package solidui-x.x.x-bin.tar.gz, extract the installation package.
 
 ```shell script
  tar -zxvf solidui-x.x.x-bin.tar.gz
