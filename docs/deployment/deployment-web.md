@@ -8,8 +8,11 @@ sidebar_position: 1
 
 ## 1 Preparations
 
-* Method 1: Download the address from the official website: https://github.com/CloudOrc/SolidUI/releases, and download the corresponding installation package (overall installation package).
-* Method 2: Compile the project installation package according to SolidUI.
+Download the source code from https://github.com/CloudOrc/SolidUI or https://github.com/CloudOrc/SolidUI/releases and compile the corresponding installation package.
+
+Compilation: [Server Compilation](/docs/development/development-server) and [Frontend Compilation](/docs/development/development-front)
+
+After uploading the installation package solidui-x.x.x-bin.tar.gz, extract the installation package.
 
 ```
 tar -zxvf solidui-x.x.x-bin.tar.gz

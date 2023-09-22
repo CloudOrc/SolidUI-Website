@@ -39,3 +39,11 @@ cd solidui-x.x.x-src
 mvn clean -N install  
 mvn clean install -Dmaven.test.skip=true -Prelease
 ```
+
+## 4. Post-Compilation Files
+
+The files after compilation are located in the solidui-x.x.x-src/solidui-dist/target directory and include the following files:
+
+solidui-x.x.x-bin.tar.gz Installation Package
+
+solidui-x.x.x-src.tar.gz Source Code Files

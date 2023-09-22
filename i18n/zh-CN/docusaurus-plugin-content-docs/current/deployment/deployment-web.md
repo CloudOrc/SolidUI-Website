@@ -8,8 +8,11 @@ sidebar_position: 1
 
 ## 1 准备工作
 
-* 方式1：从官网下载地址: https://github.com/CloudOrc/SolidUI/releases ，下载对应的安装包（整体安装包）。
-* 方式2：根据SolidUI 自行编译出项目安装包。
+https://github.com/CloudOrc/SolidUI 或者 https://github.com/CloudOrc/SolidUI/releases 下载源码，编译对应的安装包。
+
+编译：[服务端编译](/docs/development/development-server) 和 [前端编译](/docs/development/development-front)
+
+上传安装包solidui-x.x.x-bin.tar.gz后，进行解压安装包
 
 ```
 tar -zxvf solidui-x.x.x-bin.tar.gz

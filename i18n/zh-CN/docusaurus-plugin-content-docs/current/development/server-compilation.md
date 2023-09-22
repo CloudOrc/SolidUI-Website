@@ -42,3 +42,11 @@ mvn clean install -Dmaven.test.skip=true -Prelease
 
 ```
 
+## 4.编译后的文件
+
+编译后的文件在solidui-x.x.x-src/solidui-dist/target目录下，包含以下文件：
+
+solidui-x.x.x-bin.tar.gz 安装包
+
+solidui-x.x.x-src.tar.gz 源码文件
+
