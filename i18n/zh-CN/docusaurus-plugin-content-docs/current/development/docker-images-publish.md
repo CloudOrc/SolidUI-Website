@@ -1,5 +1,5 @@
 ---
-id: 'development-docker'
+id: 'development-docker-publish'
 title: 'Docker 发布镜像'
 sidebar_position: 8
 ---
