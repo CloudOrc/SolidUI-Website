@@ -118,6 +118,9 @@ export default function () {
                 <a target="_blank" href='https://gitee.com/CloudOrc/SolidUI'>
                   <img src="https://shields.io/badge/%E2%AD%90-Gitee-blue" alt="gitee" className="wow fadeInUp" />
                 </a>
+                <a target="_blank" href='https://gitee.com/CloudOrc/SolidUI'>
+                  <img src="https://shields.io/badge/%E2%AD%90-Gitee-blue" alt="gitee"/>
+                </a>
               </div>
             </div>
           </div>
