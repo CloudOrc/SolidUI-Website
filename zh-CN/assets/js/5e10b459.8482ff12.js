@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksolidui_website=self.webpackChunksolidui_website||[]).push([[7917],{1902:e=>{e.exports=JSON.parse('{"permalink":"/SolidUI-Website/zh-CN/blog/page/2","page":2,"postsPerPage":3,"totalPages":3,"totalCount":8,"previousPage":"/SolidUI-Website/zh-CN/blog","nextPage":"/SolidUI-Website/zh-CN/blog/page/3","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

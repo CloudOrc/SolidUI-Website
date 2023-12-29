@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksolidui_website=self.webpackChunksolidui_website||[]).push([[8934],{7474:e=>{e.exports=JSON.parse('{"label":"AI","permalink":"/SolidUI-Website/zh-CN/blog/tags/ai","allTagsPath":"/SolidUI-Website/zh-CN/blog/tags","count":5}')}}]);

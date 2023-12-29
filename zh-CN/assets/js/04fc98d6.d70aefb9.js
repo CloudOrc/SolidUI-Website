@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksolidui_website=self.webpackChunksolidui_website||[]).push([[8114],{1429:e=>{e.exports=JSON.parse('{"permalink":"/SolidUI-Website/zh-CN/blog/tags/ai/page/2","page":2,"postsPerPage":3,"totalPages":2,"totalCount":5,"previousPage":"/SolidUI-Website/zh-CN/blog/tags/ai","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

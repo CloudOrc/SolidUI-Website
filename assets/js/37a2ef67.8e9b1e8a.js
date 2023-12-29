@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksolidui_website=self.webpackChunksolidui_website||[]).push([[2074],{3040:e=>{e.exports=JSON.parse('{"label":"SolidUI","permalink":"/SolidUI-Website/blog/tags/solid-ui","allTagsPath":"/SolidUI-Website/blog/tags","count":8}')}}]);

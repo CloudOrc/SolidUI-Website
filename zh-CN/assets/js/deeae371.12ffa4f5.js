@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksolidui_website=self.webpackChunksolidui_website||[]).push([[5966],{4095:e=>{e.exports=JSON.parse('{"label":"AIGC","permalink":"/SolidUI-Website/zh-CN/blog/tags/aigc","allTagsPath":"/SolidUI-Website/zh-CN/blog/tags","count":3}')}}]);
